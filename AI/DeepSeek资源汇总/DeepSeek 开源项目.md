@@ -5,7 +5,7 @@
 | 项目名称          | 项目链接                                         | 简介                                                         |
 | ----------------- | ------------------------------------------------ | ------------------------------------------------------------ |
 | DeepSeek-R1       | https://github.com/deepseek-ai/DeepSeek-R1       | DeepSeek的旗舰语言模型，提供高质量的响应，支持多种自然语言处理任务。 |
-| DeepSeek-V3       | https://github.com/deepseek-ai/DeepSeek-V3       | DeepSeek的第三个版本，采用创新的混合专家架构（MoE），支持多模态搜索。 |
+| DeepSeek-V3       | https://github.com/deepseek-ai/DeepSeek-V3       | DeepSeek的第三个版本，采用创新的混合专家架构（MoE）的纯文本语言模型。 |
 | DeepSeek-V2       | https://github.com/deepseek-ai/DeepSeek-V2       | 一款强大、经济高效的专家混合语言模型                         |
 | DeepSeek-Coder-V2 | https://github.com/deepseek-ai/DeepSeek-Coder-V2 | 采用混合专家（Mixture-of-Experts，MoE）架构，突破闭源模型在代码智能中的壁垒 |
 | DeepSeek-Coder    | https://github.com/deepseek-ai/DeepSeek-Coder    | 用于辅助代码编写的AI工具，支持多种编程语言。                 |

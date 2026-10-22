@@ -56,6 +56,8 @@ curl -fsSL https://codefather.cn/openclaw_install/install-openclaw.sh | bash -s 
 
 ⚠️ 这里千万要注意！**不要安装 >= 3.22 的 OpenClaw 版本！**否则无法兼容微信 ClawBot 等插件！都怪官方更新地太快太粗暴了！
 
+> 后续更新：微信官方插件后来升级到了 2.x 版本，已经兼容新版 OpenClaw（要求 OpenClaw 2026.5.12 及以上）。如果你是现在才开始安装，直接去掉命令里的版本参数装最新版 OpenClaw，再安装最新的微信插件就行。只有坚持用旧的 1.x 插件时，才需要把 OpenClaw 固定在 3.22 以下的版本。
+
 3）接下来只需要等待片刻，脚本会自动帮你检测和安装环境，并安装 OpenClaw 程序本身。
 
 ![](https://pic.yupi.icu/1/image-20260324115344988.png)
@@ -132,7 +134,7 @@ npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 
 2）插件加载失败
 
-如果你前面没有认真看我的教程，不小心安装了 >= 3.22 的版本，就会看到下面这个错误：
+如果你用的是旧的 1.x 插件，又不小心安装了 >= 3.22 的 OpenClaw 版本，就会看到下面这个错误（最简单的办法是把微信插件升级到最新的 2.x 版本）：
 
 ![](https://pic.yupi.icu/1/image-20260324110402003.png)
 

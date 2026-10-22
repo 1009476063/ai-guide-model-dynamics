@@ -30,7 +30,7 @@ DeepSeek V4 紧接着表示：我性价比最高！
 
 打开小米 MiMo 的 ORBIT 激励计划页面：[https://100t.xiaomimimo.com](https://100t.xiaomimimo.com/)
 
-可以看到这个计划的总池子有 100 万亿 tokens，发放进行中：
+可以看到这个计划的总池子有 100 万亿 tokens，活动时间是 2026 年 4 月 28 日到 5 月 28 日（现在已经结束了）：
 
 ![](https://pic.yupi.icu/1/1777476574146-be9955f2-bedf-4c10-9f7f-686e7c4c302d.png)
 

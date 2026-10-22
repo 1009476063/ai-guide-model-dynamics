@@ -58,6 +58,6 @@ DeepSeek将继续保持强劲的发展势头，成为引领全球人工智能创
 
 >  参考：https://www.163.com/dy/article/JN0HHUSA0515DN7K.html
 >
-> https://www.showapi.com/news/article/67a95ffc4ddd79f11a01407f
+> https://www.showapi.com/news/article/67a95ffc4ddd79f11a01407f （原文已失效）
 >
-> https://www.showapi.com/news/article/67a55bc44ddd79f11a6435e7
+> https://www.showapi.com/news/article/67a55bc44ddd79f11a6435e7 （原文已失效）

@@ -38,11 +38,9 @@ Llama 4 Behemoth 是 Meta 目前最强大的模型之一，也是世界上最智
 
 所有 Llama 4 模型均采用原生多模态设计，比如上传一张图像，你可以问关于这张图像的任何问题
 
-![转存失败，建议直接上传图片文件](<转存失败，建议直接上传图片文件 https://developer.qcloudimg.com/http-save/yehe-1754229/508a4b15681abf9d334ca0dfc15e0cb9.gif>)
 
 Llama 4 Scout 支持长达 1000 万 token 的上下文，这是目前行业内最长的上下文长度，解锁了围绕记忆、个性化和多模态应用的新用例。
 
-![转存失败，建议直接上传图片文件](<转存失败，建议直接上传图片文件 https://developer.qcloudimg.com/http-save/yehe-1754229/d6d6dd682331a226f683c6e7396c3a1d.gif>)
 
 Llama 4 在图像 grounding 方面也是一流的，能够将用户提示与相关的视觉概念对齐，并将模型响应锚定到图像中的区域。
 

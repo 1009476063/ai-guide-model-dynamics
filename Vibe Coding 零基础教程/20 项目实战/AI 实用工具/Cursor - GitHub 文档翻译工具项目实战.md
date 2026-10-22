@@ -166,7 +166,7 @@ graph TD
 
 前后端：Next.js 15（App Router）、TypeScript、shadcn/ui + Tailwind CSS、Prisma ORM、MySQL、NextAuth.js
 
-AI 相关：OpenRouter API 统一接入 100+ 大模型、AI 智能翻译、AI 分析 README 结构
+AI 相关：OpenRouter API 统一接入数百个大模型、AI 智能翻译、AI 分析 README 结构
 
 GitHub 对接：GitHub App 细粒度权限控制、GitHub REST API、GitHub Webhook、Octokit
 

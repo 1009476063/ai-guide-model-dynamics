@@ -190,6 +190,18 @@ Captain 负责拆分任务、分配工作并做最终汇总，下面的成员 Ag
 
 
 
+#### DeepSeek Bot 打造你的个人助理
+
+DeepSeek Bot 是社区开发者在 2026 年 10 月做的一个插件（并非 DeepSeek 官方出品），能把 DSH 变成一个 Personal Agent 个人智能体。
+
+![DeepSeek Bot 安装文档](https://pic.yupi.icu/1/personalagent-26-deepseekbot-28af3921.png)
+
+在 DSH 的插件页面里添加一下就能装好，然后就可以创建多个有名字、有人设的 Bot，接入飞书、微信等聊天软件，背后用什么模型也能随便换。它的记忆存在用 Git 管理的 Markdown 文件里，Bot 每次记住了什么、改了什么都能查得一清二楚。
+
+不过它运行在你自己的电脑或服务器上，想让它 24 小时在线，还得自己准备一台不关机的机器。如果你想了解 Personal Agent 是什么、和 Grok Bot 这类大厂产品有什么区别，可以阅读本教程 AI 编程概念大全板块中的《Personal Agent 详解》。
+
+
+
 ### DSH 实用工具与界面
 
 接下来是第二类，这些插件主要增强 DSH 的面板能力和使用体验，日常用起来更顺手。

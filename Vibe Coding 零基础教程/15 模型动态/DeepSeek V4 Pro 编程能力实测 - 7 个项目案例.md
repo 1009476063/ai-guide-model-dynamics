@@ -48,7 +48,7 @@ DeepSeek V4 Pro 正式版拿了 87.9，而国外顶级模型 Claude Fable 5 是 
 
 这次测试我统一使用 Codex 这个主流的 AI 编程工具来跑所有任务。
 
-把 DeepSeek V4 Pro 接进 Codex CLI 没什么难度，官方这次专门适配了 Responses API 和 Codex，改改配置文件就能跑。具体步骤可以阅读本教程编程工具板块「Codex」目录中的《Codex 对接国产模型教程》，照着做就行。
+把 DeepSeek V4 Pro 接进 Codex CLI 没什么难度，官方这次专门适配了 Responses API 和 Codex，改改配置文件就能跑。具体步骤可以阅读本教程编程工具板块「Claude Code」目录中的《Claude Code 和 Codex 对接国内模型教程》，照着做就行。
 
 ![](https://pic.yupi.icu/1/image-20260803114842807.png)
 
@@ -60,7 +60,7 @@ DeepSeek V4 Pro 是纯文本模型，看不了图。这意味着它没办法像 
 
 Harness 指的是把模型能力落到真实环境里的那层工程，负责调用工具、读写文件、管理上下文、处理报错，让模型能把一件事从头干到尾。
 
-问题是，官方那套 Harness 到现在都还没放出来。
+问题是，写这篇文章的时候，官方那套 Harness 还没放出来（后续更新：官方已经开源了 DeepSeek Harness，教程可以阅读本教程编程工具板块「DeepSeek Harness」目录中的《DeepSeek Harness 保姆级入门教程》）。
 
 那我就自己给它搭一套呗~
 

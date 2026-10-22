@@ -9,7 +9,7 @@
 
 **DeepSeek的优势：成本效益与专业性**
 
-DeepSeek最显著的优势在于其惊人的成本效益。根据报道，DeepSeek的训练成本仅为其他大型语言模型的1%，甚至低至ChatGPT的十分之一。DeepSeek R1的训练耗资约为550万美元，仅使用了2048个Nvidia H800 GPU，训练时间为55天。而ChatGPT-4的训练成本则高达1亿美元以上。这巨大的成本差异，意味着DeepSeek能够以更低廉的价格提供强大的AI服务，降低了开发和应用的门槛，尤其对学生、开发者和小型企业来说，这无疑是一个巨大的利好。
+DeepSeek最显著的优势在于其惊人的成本效益。根据报道，DeepSeek的训练成本仅为其他大型语言模型的1%，甚至低至ChatGPT的十分之一。DeepSeek-V3的训练耗资约为550万美元（官方技术报告公布的单次训练成本），仅使用了2048个Nvidia H800 GPU，训练时间为55天。而ChatGPT-4的训练成本则高达1亿美元以上。这巨大的成本差异，意味着DeepSeek能够以更低廉的价格提供强大的AI服务，降低了开发和应用的门槛，尤其对学生、开发者和小型企业来说，这无疑是一个巨大的利好。
 
 此外，DeepSeek在技术精度和定制化方面表现出色。多个评测显示，DeepSeek在特定领域，例如编码和研究方面，展现出更高的准确性和效率。它更适合于处理专业性和技术性较强的任务。一些报道指出，DeepSeek在中文内容处理方面可能比ChatGPT更强大。这或许与其训练数据和算法设计有关。
 
@@ -31,4 +31,4 @@ AI领域的发展日新月异，未来将会有更多更强大的AI模型涌现�
 
 
 
-> 来源：[https://www.3win.ai/zh/deepseek-vs-chatgpt%EF%BC%9A%E8%B0%81%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%8E%8B%E8%80%85%EF%BC%9F/?utm_source=chatgpt.com](https://www.3win.ai/zh/deepseek-vs-chatgpt：谁才是真正的王者？/?utm_source=chatgpt.com)
+> 来源：[https://www.3win.ai/zh/deepseek-vs-chatgpt%EF%BC%9A%E8%B0%81%E6%89%8D%E6%98%AF%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%8E%8B%E8%80%85%EF%BC%9F/?utm_source=chatgpt.com](https://www.3win.ai/zh/deepseek-vs-chatgpt：谁才是真正的王者？/?utm_source=chatgpt.com)（原文已失效）

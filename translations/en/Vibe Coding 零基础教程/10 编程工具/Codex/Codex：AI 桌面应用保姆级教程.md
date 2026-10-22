@@ -221,7 +221,7 @@ AI first thinks by itself, then may ask a few follow-up questions. You can answe
 
 Finally, it generates an implementation plan document, including the summary, core requirements, testing plan, and more. The more complex the website you’re building, the more carefully you should read this plan.
 
-![](https://pic.yupi.icu/1/1779337765733-ee4488ce-1556-41b4-954c-50a788f5faef.png)
+![](https://pic.yupi.icu/1/1779337765733-ee4408ce-1556-41b4-954c-50a788f5faef.png)
 
 
 
@@ -741,7 +741,7 @@ Codex supports scheduled tasks.
 
 Open the **Automation** panel on the left, and you’ll see that Codex already includes some task templates, but most of them are programming-related—things like summarizing code changes or checking code issues. Many people may not need those directly, so let’s create a more practical automation ourselves.
 
-![](https://pic.yupi.icu/1/1779342339487-c3e44a10-f14c-4d66-aa29-6c34d0a732f5.png)
+![](https://pic.yupi.icu/1/1779342339487-c3e44a10-f14c-4d56-aa29-6c34d0a732f5.png)
 
 There are two ways to create scheduled tasks.
 
@@ -766,7 +766,7 @@ After creation, once the scheduled time arrives, Codex automatically opens a con
 
 Click the task to view detailed information:
 
-![](https://pic.yupi.icu/1/1779327610752-f322467e-2498-48c2-9ca0-09ee5534270b.png)
+![](https://pic.yupi.icu/1/1779327610752-f322467e-2498-48c2-9ca0-09ee5534720b.png)
 
 If you click a specific run history record, you can even inspect the actual task conversation. I recommend observing its behavior and continuously improving the prompt over time.
 

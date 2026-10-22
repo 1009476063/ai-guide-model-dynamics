@@ -150,6 +150,8 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 [Amazon Q Developer](https://aws.amazon.com/q/developer/)（原名 CodeWhisperer）是亚马逊推出的 AI 编程助手。
 
+需要注意的是，AWS 已经宣布将在 2027 年 4 月 30 日停止支持 Amazon Q Developer 的 IDE 插件，官方引导用户迁移到自家的新工具 Kiro。所以新手如果想用亚马逊的 AI 编程工具，建议直接了解 Kiro。
+
 特点是与 AWS 服务深度集成、支持多种 IDE（VS Code、JetBrains 等）、有免费版本、代码安全扫描。适合使用 AWS 服务的开发者、需要代码安全扫描的团队。
 
 

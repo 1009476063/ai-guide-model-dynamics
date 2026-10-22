@@ -4,7 +4,7 @@
 
 大家好，我是程序员鱼皮。
 
-DeepSeek 开源的 Harness 工具 DSH，核心理念是「一切皆插件」，发布一周 GitHub 就冲到了 20 万 Star。
+DeepSeek 开源的 Harness 工具 DSH，核心理念是「一切皆插件」，发布没多久 GitHub 就冲到了 20 万 Star。
 
 ![](https://pic.yupi.icu/1/image-20260814133452050.png)
 

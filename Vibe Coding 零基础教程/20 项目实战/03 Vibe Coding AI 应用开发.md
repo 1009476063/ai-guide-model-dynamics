@@ -17,7 +17,7 @@
 
 AI 应用就是利用 AI 能力（比如文本生成、图片生成、语音识别等）来解决实际问题的应用程序。你不需要训练 AI 模型，只需要调用现成的 AI API 就可以了。这就像你不需要知道汽车引擎怎么工作，只需要会开车就行。
 
-目前主流的 AI API 服务有很多。文本生成方面，有 OpenAI 的 GPT-4、Anthropic 的 Claude、Google 的 Gemini，还有国产大模型比如通义千问、文心一言、智谱 AI 等。图片生成方面，有 DALL-E 3、Midjourney、Stable Diffusion，还有国产的文心一格等。语音识别方面，有 OpenAI 的 Whisper、Google Speech-to-Text、讯飞语音识别等。
+目前主流的 AI API 服务有很多。文本生成方面，有 OpenAI 的 GPT、Anthropic 的 Claude、Google 的 Gemini，还有国产大模型比如通义千问、文心一言、智谱 AI 等。图片生成方面，有 DALL-E 3、Midjourney、Stable Diffusion，还有国产的文心一格等。语音识别方面，有 OpenAI 的 Whisper、Google Speech-to-Text、讯飞语音识别等。
 
 AI 应用的开发流程和普通应用类似，只是多了一个调用 AI API 的步骤。整个流程是：用户输入 → 处理输入 → 调用 AI API → 处理 AI 响应 → 展示结果。
 

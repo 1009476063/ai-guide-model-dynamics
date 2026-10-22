@@ -40,6 +40,8 @@ MCP 的核心是 "客户端 - 服务器" 架构，其中 MCP 客户端主机可�
 
 MCP 的使用分为两种模式，STDIO 模式（本地运行）和 SSE 模式（远程服务）。
 
+> 注：MCP 官方规范从 2025 年 3 月起已经用 Streamable HTTP 取代了 SSE 作为远程传输方式，新项目建议优先使用 Streamable HTTP。另外本文示例基于 Spring AI 1.0.0-M6 预览版，正式版的依赖名已改为 `spring-ai-starter-mcp-server` 等新命名，实际开发时请以 Spring AI 官方文档的最新版本为准。
+
 
 
 ### MCP 服务端（基于 stdio 标准流）

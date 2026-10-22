@@ -734,7 +734,7 @@ Base64 编码和解码，支持文本和图片，可以在线预览。在处理�
 
 1、OpenAI GPTs 商店
 
-在 [ChatGPT GPTs](https://chat.openai.com/gpts) 上可以看到各种用户创建的 GPT 应用，涵盖写作、编程、设计、教育等各个领域。你可以体验这些应用，看看哪些功能可以用网页或小程序的形式实现。
+在 [ChatGPT GPTs](https://chatgpt.com/gpts) 上可以看到各种用户创建的 GPT 应用，涵盖写作、编程、设计、教育等各个领域。你可以体验这些应用，看看哪些功能可以用网页或小程序的形式实现。
 
 ![](https://pic.yupi.icu/1/image-20260112125511653.png)
 

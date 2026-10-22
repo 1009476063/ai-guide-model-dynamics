@@ -56,7 +56,7 @@ Dify 提供了可视化的配置界面，你可以通过拖拽的方式搭建 AI
 
 ![](https://pic.yupi.icu/1/1743560803824-ab33d9d9-e994-45e5-8190-fc104e679747.png)
 
-不同大模型的参数规模、处理能力、接受的对话长度是不一样的。比如 Claude Opus 编程能力很强，Gemini 3 Pro 支持超长上下文，DeepSeek 完全免费。
+不同大模型的参数规模、处理能力、接受的对话长度是不一样的。比如 Claude Opus 编程能力很强，Gemini 3 Pro 支持超长上下文，DeepSeek 价格非常便宜。
 
 ![](https://pic.yupi.icu/1/1743560841202-c37cde5b-0b25-4ebb-adff-3ab66af35d75.png)
 
@@ -229,7 +229,7 @@ Coze 的优势是零代码、可视化流程，而且提供了很多预置的插
 
 1、选择合适的大模型
 
-不同的任务适合不同的模型。如果是创意写作，可以选择 GPT-4 或 Claude；如果是代码生成，Claude 的编程能力更强；如果预算有限，可以选择 DeepSeek 或 Gemini Flash。
+不同的任务适合不同的模型。如果是创意写作，可以选择 GPT 或 Claude 的最新模型；如果是代码生成，Claude 的编程能力更强；如果预算有限，可以选择 DeepSeek 或 Gemini Flash。
 
 2、优化提示词
 

@@ -92,7 +92,7 @@ OpenCode 支持 2 种模式，默认是 Build 模式，用来构建应用、生�
 
 ![](https://pic.yupi.icu/1/image-20260107175409282.png)
 
-好家伙，连智谱最新的 GLM-4.7 竟然也免费？那我的 Coding Plan 套餐不是白开了？
+好家伙，连智谱当时最新的 GLM-4.7 竟然也免费？那我的 Coding Plan 套餐不是白开了？
 
 ![](https://pic.yupi.icu/1/image-20260107175513490.png)
 

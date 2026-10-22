@@ -20,11 +20,13 @@
 
 在动手之前，先说说为什么我拿 DeepSeek 来举例。
 
-DeepSeek-V4-Flash 这个模型主打性价比，输入 1 元 / 百万 token、输出 2 元 / 百万 token，大概只有 V4-Pro 十分之一的价格。
+DeepSeek 的 Flash 模型主打性价比，写这篇文章时 V4-Flash 输入 1 元 / 百万 token、输出 2 元 / 百万 token，大概只有 V4-Pro 十分之一的价格。
+
+> 注：DeepSeek 现在的 Flash 模型已经升级为 V4.1 Flash（模型名 `deepseek-flash`），改成了峰谷计价：空闲时段输入 1 元、输出 4 元，高峰时段翻倍（每百万 token，缓存未命中），大约是 V4-Pro 的三分之一到四分之一。最新价格以 DeepSeek 官方价格页为准。
 
 ![](https://pic.yupi.icu/1/image-20260803152949072.png)
 
-重点是它在 Agent 能力上做了大幅强化，在专门测试 AI 自主执行终端任务的 Terminal-Bench 上拿到了 82.7 分，竟然反超了自家的 V4-Pro 预览版（72.1 分），写代码、调工具、自主执行任务都很能打。
+重点是它在 Agent 能力上做了大幅强化，在专门测试 AI 自主执行终端任务的 Terminal-Bench 上拿到了 82.7 分，竟然反超了当时还是预览版的 V4-Pro（72.1 分），写代码、调工具、自主执行任务都很能打。
 
 ![](https://pic.yupi.icu/1/HOiZba2aYAAozFz.jpeg)
 

@@ -51,7 +51,7 @@
 
 **API免费**：提供免费的API，速度很慢，几乎无法运行。
 
-### 5、[GitHub Marketplace](https://github.com/marketplace/models/azureml-deepseek/DeepSeek-R1)
+### 5、[GitHub Marketplace](https://github.com/marketplace?type=models)
 
 **免费使用**：Playground免费，但对于中国用户，访问GitHub可能不太稳定。如果有条件的用户，可以试一下。
 

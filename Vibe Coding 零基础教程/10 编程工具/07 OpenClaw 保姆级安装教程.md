@@ -16,7 +16,7 @@
 
 ![](https://pic.yupi.icu/1/image-20260310160613289.png)
 
-OpenClaw 的火爆程度远超我的想象，从 2025 年 11 月上线，仅用了大约 120 天就登顶 GitHub 星标 **历史第一**，累计拿下 29 万+ Stars，超过了 Linux、React 等一众前辈！
+OpenClaw 的火爆程度远超我的想象，从 2025 年 11 月上线，仅用了大约 120 天就登顶 GitHub 星标 **历史第一**，累计拿下 29 万+ Stars（如今已经超过 39 万），超过了 Linux、React 等一众前辈！
 
 ![](https://pic.yupi.icu/1/image-20260310161116303.png)
 
@@ -292,7 +292,7 @@ openclaw onboard --install-daemon
 
 ![](https://pic.yupi.icu/1/image-20260310150731894.png)
 
-当然，你也可以选择其他大模型平台。如果你想了解各模型在 OpenClaw 场景下的实际表现，可以参考 [PinchBench](https://pinchbench.com/) 排行榜，这是一个专门测试大模型做 OpenClaw 任务的评测网站。目前成功率最高的是 Claude Opus 4.8（成功率 82.5%），最便宜的是 Google 的 gemini-2.5-flash-lite（每次任务只要 1 毛钱）。
+当然，你也可以选择其他大模型平台。如果你想了解各模型在 OpenClaw 场景下的实际表现，可以参考 [PinchBench](https://pinchbench.com/) 排行榜，这是一个专门测试大模型做 OpenClaw 任务的评测网站。以 2026 年 3 月的榜单为例，当时成功率最高的是 Claude Opus 4.6（成功率 82.5%），最便宜的是 Google 的 gemini-2.5-flash-lite（每次任务只要 1 毛钱）。不过这个榜单更新很快，新模型一直在刷新排名，选模型之前建议去看一眼最新数据。
 
 ![](https://pic.yupi.icu/1/image-20260310164932093.png)
 

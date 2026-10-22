@@ -553,7 +553,7 @@ AI 很难从零写出这么复杂的效果，但你直接让 AI 用这个库，�
 - [Magic UI](https://magicui.design/)：150+ 动画组件，专门做微交互、流光边框、文字渐变
 - [DaisyUI](https://daisyui.com/)：30+ 主题，有 cyberpunk、retro、cupcake 等风格
 - [Brutalist UI](https://brutalistui.site/)：粗野主义风格，粗边框、硬阴影、高对比
-- [Glass UI](https://ui.glass/)：玻璃拟态效果，半透明、模糊背景
+- [CSS Glass](https://css.glass/)：玻璃拟态效果，半透明、模糊背景
 - [ikun-ui](https://github.com/ikun-svelte/ikun-ui)：基于 Svelte.js 和 UnoCSS 的组件库
 - [Radix UI](https://www.radix-ui.com/)：无样式原语组件，完全自定义
 - [Mantine](https://mantine.dev/)：100+ 组件，功能丰富

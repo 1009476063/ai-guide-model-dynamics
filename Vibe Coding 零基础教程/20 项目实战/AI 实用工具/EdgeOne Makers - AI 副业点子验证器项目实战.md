@@ -390,6 +390,6 @@ AI 很快修复了代码，利用 `makers-deploy` 技能更新了线上的网站
 
 ## 写在最后
 
-从写代码到上线，整个过程不到 20 分钟。回过头来想想，我只关注了 Agent 的业务逻辑，其他的联网搜索、对话记忆、模型网关、链路追踪这些工程化的东西，[EdgeOne Makers](https://cloud.tencent.com/act/pro/edgeone-makers-agent?from=30133) 全帮我搞定了。
+从写代码到上线，整个过程不到 20 分钟。回过头来想想，我只关注了 Agent 的业务逻辑，其他的联网搜索、对话记忆、模型网关、链路追踪这些工程化的东西，[EdgeOne Makers](https://pages.edgeone.ai/zh/document/product-introduction) 全帮我搞定了。
 
 AI 时代，大模型的能力很重要，但给大模型提供的这一系列配套能力同样重要。模型再强，没有靠谱的工程化支撑，Agent 也只能停留在本地 Demo 阶段。能让开发者把精力全部放在业务逻辑上，而不是重复造轮子，这是非常有价值的事。

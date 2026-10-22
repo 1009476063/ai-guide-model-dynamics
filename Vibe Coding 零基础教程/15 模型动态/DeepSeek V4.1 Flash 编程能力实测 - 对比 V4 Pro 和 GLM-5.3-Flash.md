@@ -28,6 +28,8 @@
 
 果不其然，官方已经下线了旧的 V4 Flash 和 V4 Flash Vision Exp 模型，而且 **9 月 14 日 12:00 之后 V4 Pro 也要正式下线**，到时候所有发给 `deepseek-v4-pro` 的请求全部自动路由到 V4.1 Flash，并且按 V4.1 Flash 的单价计费，一直持续到未来 V4.1 Pro 上线。
 
+> 后续更新：DeepSeek 后来应用户需求取消了 V4 Pro 的下线计划，9 月 14 日之后继续提供 `deepseek-v4-pro` 的 API 服务，计费方式不变。10 月 17 日 V4.1 Flash 又更新到了 1017 版本，实测可以阅读本板块中的《DeepSeek V4.1 Flash 1017 编程能力实测 - 4 个项目案例》。
+
 相当于 Flash 彻底把 Pro 干掉了……
 
 那 Flash 模型真的比 Pro 强么？差距有多少？我打算自己测一测。

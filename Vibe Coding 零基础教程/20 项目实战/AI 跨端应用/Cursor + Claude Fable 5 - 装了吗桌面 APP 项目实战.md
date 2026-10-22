@@ -10,7 +10,7 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 ![](https://pic.yupi.icu/1/1781056792310-48d8afe0-128a-4e65-905d-23136cdc61a9-20260611164929073.png)
 
-但，它也是目前全球最贵的模型，输入 $10 / 输出 $50 每百万 token，是 Opus 4.8 的两倍，DeepSeek V4 的 50 倍！
+但，它也是最贵的模型之一，输入 $10 / 输出 $50 每百万 token，是 Opus 4.8 的两倍，DeepSeek V4 的 50 倍！
 
 ![](https://pic.yupi.icu/1/01_%25E4%25B8%25BB%25E6%25B5%2581AI%25E6%25A8%25A1%25E5%259E%258B%25E5%25AE%259A%25E4%25BB%25B7%25E5%25AF%25B9%25E6%25AF%2594%25E8%25A1%25A8%25E6%25A0%25BC_compressed_v2.png)
 

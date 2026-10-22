@@ -72,4 +72,4 @@
 
 【避雷要求】不要网红款，要日常通勤款
 
-> 来源：https://www.xiaohongshu.com/explore/67a71ff00000000029011801?source=webshare&xhsshare=pc_web&xsec_token=ABLdF6QKSCiRS-u0SAYSdLudIGd7AfZqEXaUs0r8OH_d8=&xsec_source=pc_share
+> 来源：https://www.xiaohongshu.com/explore/67a71ff00000000029011801?source=webshare&xhsshare=pc_web&xsec_token=ABLdF6QKSCiRS-u0SAYSdLudIGd7AfZqEXaUs0r8OH_d8=&xsec_source=pc_share （原文已失效）
