@@ -1,3 +1,7 @@
+---
+permalink: /models/claude-opus-5-5-vs-gpt-6-sol/
+title: "Claude Opus 5.5 对比 GPT-6 Sol 双模型横评"
+---
 # Claude Opus 5.5 双模型横评 - 对比 GPT-6 Sol 实测 5 个案例
 
 > 同一天发布的两个新模型，一个追求极致能力，一个主打价格减半
@@ -8,21 +12,21 @@
 
 2026 年 9 月 23 日凌晨，Anthropic 发布了 Claude Opus 5.5，号称在大多数任务上都能打平自家最强的 Fable 5.1，运行成本却比上一代 Opus 5 还低 40%！
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-opening-opus55-tweet-fa15b3f5.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-opening-opus55-tweet-fa15b3f5-d3aae2d437)
 
 好家伙，上周 A ÷ 不是还在呼吁 AI 前沿发展要 **放缓节奏** 么？
 
 明明距离 Claude Opus 5 的发布才过了 2 个月，官方还说「这是呼吁放缓之后发布的第一个模型」？？意思是如果不放缓，Claude Opus 55 都出来了？？？
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-opening-opus55-pace-d0e0c7b9.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-opening-opus55-pace-d0e0c7b9-96c310e99a)
 
 然后不到 2 小时，OpenAI 也发布了 GPT-6 Sol，号称继承了 GPT-6 Astra 的大部分优势，API 价格却比 GPT-5.6 直接砍了一半！每百万 token 输入 2 刀、输出 10 刀，正好是 Opus 5.5 的一半。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-opening-gpt6sol-tweet-008661c1.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-opening-gpt6sol-tweet-008661c1-9ef0707121)
 
 历史似曾相识，两大顶级 AI 公司再次上演中门对狙……
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-opening-duel-35e16159.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-opening-duel-35e16159-0df2ddae4a)
 
 这篇文章我会先快速过一下两个模型的发布信息，然后用 5 个案例实测它们的真实水平。
 
@@ -34,7 +38,7 @@
 
 这次我不想花太多时间科普跑分了，直接放一张我做的 [AI 大模型世界网站](https://www.bilibili.com/toy/ai-model-world) 的对比图，大家自己看着玩就好：
 
-![](https://pic.yupi.icu/1/image-20260923124827768.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260923124827768-df8b4b0fbb)
 
 简单来说，Opus 5.5 的智能程度直接冲到了第一名，GPT-6 Sol 只比上一代 GPT-5.6 Sol 多了 1 分。
 
@@ -48,7 +52,7 @@
 
 所以，要看大模型的效果，别看跑分，看实测就得了~
 
-![](https://pic.yupi.icu/1/c5775b65356fe516c7c4c3dd36a276ce.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/c5775b65356fe516c7c4c3dd36a276ce-b89c9a1b5e)
 
 这次我准备了 5 个案例，Claude Opus 5.5 在 Cursor 里跑，GPT-6 Sol 在 Codex 里跑，推理强度都开到 high，两边使用相同的提示词，全程我不会人工干预。
 
@@ -64,27 +68,27 @@
 
 AI 圈有个经典测试叫「鹈鹕骑自行车」，是开发者 Simon Willison 发明的。他让 AI 直接写 SVG 代码画一只骑自行车的鹈鹕，不许看效果，车架怎么连、脚怎么踩踏板，全靠 AI 在脑子里算坐标。
 
-![](https://pic.yupi.icu/1/%E9%B9%88%E9%B9%95%E9%AA%91%E8%BD%A6.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/img-31e6c0e886)
 
 不过这道题实在太出名了，Simon 这次贴出来的推理过程里，Opus 5.5 开口第一句就是「这是一个经典的测试请求」，AI 一眼就认出来了……
 
 所以我换了个题目，让 AI 画一只骑着自行车送外卖的大熊猫，同样只许写代码，不许打开看效果。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-prompt-01-case1-panda-e56a4faf.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-prompt-01-case1-panda-e56a4faf-ff543736ef)
 
 两个模型都在 3 分钟内交卷了，左边是 Opus 5.5，右边是 GPT-6 Sol：
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-compare-01-case1-panda-ac8dc860.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-compare-01-case1-panda-ac8dc860-69653f0f5d)
 
 Opus 5.5 这张的完成度明显更高。牙盘、链条、脚踏板都画出来了，熊猫的脚踩在踏板上，手握着车把，车把上还挂了一杯奶茶。
 
 它还自己加了车灯、「叮咚～外卖到啦！」的对话气泡和城市背景。而且这张 SVG 是会动的，轮子在转，链条也在走！
 
-![](https://pic.yupi.icu/1/panda-opus55.svg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/panda-opus55-760dc9a75e)
 
 再看看右边，这什么玩意？！我真的绷不住了……
 
-![](https://pic.yupi.icu/1/panda-gpt6sol.svg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/panda-gpt6sol-36e3fb3dba)
 
 这一轮 Opus 5.5 完胜。
 
@@ -96,7 +100,7 @@ Opus 5.5 这张的完成度明显更高。牙盘、链条、脚踏板都画出�
 
 我让两个模型用 300 字左右，给一个完全不懂技术的朋友讲清楚什么是大语言模型，要求说人话、不要书面腔，也不许加标题和列表。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-prompt-02-case2-writing-5bf9f57d.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-prompt-02-case2-writing-5bf9f57d-b767a436b0)
 
 两篇我先隐去模型名，你可以猜猜哪篇是 Opus 5.5 写的？
 
@@ -118,7 +122,7 @@ Opus 5.5 这张的完成度明显更高。牙盘、链条、脚踏板都画出�
 
 答案是 B 篇出自 Opus 5.5，A 篇出自 GPT-6 Sol，你猜对了吗？
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-compare-02-case2-writing-221711f9.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-compare-02-case2-writing-221711f-3e84bbabe4)
 
 我个人更喜欢 Opus 5.5 这篇。它先从你天天在用的 ChatGPT、豆包说起，再拿「特别爱读书的学生」打比方，然后一句「一个字一个字地往下接」就把大模型的原理讲明白了。中间还穿插了一句「听起来挺简单对吧？」，读起来真的像朋友在跟你聊天。
 
@@ -136,7 +140,7 @@ GPT-6 Sol 这篇也不差，最后提醒大家看病、花钱、签合同这类�
 
 另外我还要求 AI 做完之后自己打开网页验证效果，不满意就自己接着改，直到满意再交付。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-prompt-03-case3-city-5104e7f3.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-prompt-03-case3-city-5104e7f3-c8a12b9c7a)
 
 
 
@@ -146,25 +150,25 @@ Opus 5.5 在这道题上磨了将近一个半小时，中间自己截图检查�
 
 但是当我打开主页时，我直接「卧槽」了！
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-opus55-01-home-f24fb388.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-opus55-01-home-f24fb388-8047b4629b)
 
 夜里的渝中半岛被两条江环抱着，每栋楼的窗户都一格一格亮着灯，跨江大桥上还挂着灯带。
 
 这个细腻度，这个质感，我感觉一切的等待都是值得的！
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-meme-drool-7e3a339b.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-meme-drool-7e3a339b-18590bbb65)
 
 鼠标拖一拖就能旋转、平移、缩放，按数字键 1 到 6 还能切换视角。比如切换到俯视图，半岛的轮廓、江面和盘成一团的立交都看得一清二楚：
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-opus55-02-overhead-ccc2c93e.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-opus55-02-overhead-ccc2c93-a8fb6eca0c)
 
 最让我惊喜的是细节。明明有几百栋大楼，放大之后你竟然能看到「李子坝站」的中文站牌，还有一列轻轨正从楼中间穿过去！
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-opus55-03-liziba-bb824e29.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-opus55-03-liziba-bb824e29-7632cabd1a)
 
 再把镜头推到立交桥上，一圈套一圈的匝道在空中叠了好几层，每条匝道上都有车辆在流动，把重庆的层叠立交还原得栩栩如生。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-opus55-04-interchange-a1b7e3d4.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-opus55-04-interchange-a1b7-632c4475eb)
 
 Opus 5.5 甚至还专门做了一个「黄桷湾立交」的场景预设，备注写的是「5 层 15 匝道，导航也迷路」，AI 这个梗玩得是真懂重庆啊！
 
@@ -172,7 +176,7 @@ Opus 5.5 甚至还专门做了一个「黄桷湾立交」的场景预设，备�
 
 我顺手切换到「赛博 8D」预设，立交直接拉满到 6 层 27 条匝道，霓虹灯一开，赛博山城的味道就出来了：
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-opus55-05-cyber-e8126cbf.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-opus55-05-cyber-e8126cbf-962ed04e50)
 
 这个效果我直接给到夯！
 
@@ -186,19 +190,19 @@ Opus 5.5 甚至还专门做了一个「黄桷湾立交」的场景预设，备�
 
 整个画面是一片灰绿色的低饱和配色，楼就是一个个方盒子，一眼就能感受到和 Opus 5.5 的差距。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-gpt6sol-01-home-9dd2b762.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-gpt6sol-01-home-9dd2b762-d5a9249b4f)
 
 整体的建模比较简陋，而且问题还不少。这…… 这是悬空城啊？
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-gpt6sol-02-model-092b0c93.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-gpt6sol-02-model-092b0c93-7104cea9ab)
 
 再看看刚才那个经典的李子坝轻轨穿楼，穿模问题就更明显了。车厢一头扎进了楼里，墙上却没有给轻轨留出通道……
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-gpt6sol-03-rail-ade8798c.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-gpt6sol-03-rail-ade8798c-dff5815c9c)
 
 它也支持俯视图，该有的功能也都有。但无论是 UI 效果，还是右侧菜单的丰富程度，Opus 5.5 都是降维打击。GPT-6 Sol 的面板上只有 3 个预设和 6 个参数，Opus 5.5 光场景预设就有 6 个，参数更是有 7 组 30 多个。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case3-gpt6sol-04-overhead-e77ca1fb.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case3-gpt6sol-04-overhead-e77ca1-b789b2c629)
 
 
 
@@ -210,37 +214,37 @@ Opus 5.5 甚至还专门做了一个「黄桷湾立交」的场景预设，备�
 
 一开始我想让 AI 操作专业的 PS 软件画图，但软件越复杂、变数就越多。于是我先让 AI 开发了一个简易画板网页，只有画笔、橡皮擦、油漆桶、直线、矩形、椭圆和吸管这几个基础工具，连文字工具都没有，气泡里的字也得一笔一笔手写。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case4-paint-ui-916ad408.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case4-paint-ui-916ad408-4aadb89d7c)
 
 然后我给了一张 Q 版 DeepSeek 鲸鱼娘的参考图，让两个模型照着画出来：
 
-![](https://pic.yupi.icu/1/Q%E7%89%88%E9%B2%B8%E9%B1%BC%E5%A8%98%E5%B0%8F.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/q-60048dfd4c)
 
 提示词里我给 AI 定了一条规矩，就是只能用鼠标和键盘操作，不许写代码往画布上画。画板上的按钮怎么用、先画哪儿后画哪儿，我一句都没教，全部让 AI 自己摸索。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-prompt-04-case4-whale-493770ef.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-prompt-04-case4-whale-493770ef-c9860fd491)
 
 Opus 5.5 是在 Cursor 自带的浏览器里画的，前后花了 1 小时 17 分钟，画出来是这样的：
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case4-opus55-paint-final-b491f4fe.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case4-opus55-paint-final-b491f4f-30648d6a69)
 
 好家伙，怎么画成卷发了？？头发是一坨一坨的圆球球拼起来的，连「好模型」三个字都是用圆点一个个点出来的……
 
 翻了一下 AI 的执行过程我才明白，应该是因为 Cursor 内置浏览器的拖拽功能只能拖动网页元素，没法按住鼠标从一个点划到另一个点。Opus 5.5 画不出连续的线条，只能把笔刷调到 65 像素，一下一下地点，再用油漆桶填色，前后点了 270 多下。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case4-opus55-step1-305320fa.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case4-opus55-step1-305320fa-f1504b4fc8)
 
 不过即便是这样，它的构图和配色还原得挺像的，对话气泡、呆毛、白色蕾丝头饰、蓝色大眼睛、腮红和蝴蝶结都在。
 
 GPT-6 Sol 用的是 Codex 的电脑操作能力，直接控制真实的 Chrome 浏览器来画，参考图也是靠 GPT 自身的多模态能力看的。它可以自由拖动鼠标画线，17 分钟就画完了。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case4-gpt6sol-final-ffc0b924.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case4-gpt6sol-final-ffc0b924-f01d819950)
 
 怎么硕呢？眼睛、腮红、呆毛、蝴蝶结和白色头饰倒是都有，眼睛画得还挺有神。但「好模型」三个字就崩得太明显了，头发是一大块半透明的蓝色，上面还飘着几道莫名其妙的折线。
 
 两张放在一起，你觉得哪张更像参考图？
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-compare-03-case4-whale-05c24b2e.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-compare-03-case4-whale-05c24b2e-8a32e6d4cd)
 
 我个人投 Opus 5.5 一票，即使是被 AI 工具限制了，只能一个点一个点地戳，还原度反而更高。
 
@@ -252,7 +256,7 @@ GPT-6 Sol 用的是 Codex 的电脑操作能力，直接控制真实的 Chrome �
 
 提示词跟之前测 Claude Fable 5.1、Kimi K3、GPT-6 Astra 时用的完全一样。我要求 AI 克隆 VS Code 的开源代码，在此基础上做一个 Web 版的 AI 编程工具，Editor Window 和 Agents Window 两种窗口能来回切换，内置 AI 接的是 DeepSeek V4.1 Flash。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-prompt-05-case5-cursor-1a7a7746.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-prompt-05-case5-cursor-1a7a7746-257963670e)
 
 
 
@@ -262,31 +266,31 @@ Opus 5.5 花了 53 分钟交卷。打开网站，默认就是 Agents Window 智�
 
 不骗大家，我刚看到这个界面的时候，真的大喊了一声「卧槽」！
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-opus55-01-agents-5859edb9.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-opus55-01-agents-5859edb9-58fb904950)
 
 左侧是按工作区分组的 Agent 列表，每个任务改了多少行代码都标得清清楚楚。中间是任务输入框，下面还有几个推荐任务，跟 Cursor 3 本尊的 Agents Window 神似。
 
 光看到这里，你可能还没意识到问题的严重性，那如果我把文件查看器、终端、Agent 侧边栏都打开呢？
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-opus55-02-panels-cc918a47.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-opus55-02-panels-cc918a47-ffa8e069d4)
 
 上面这些功能全都能正常使用！比如在终端里敲一个 tree 命令，项目结构立刻就打印出来了。我在右侧的 Agent 侧边栏里问这个项目有几个源码文件，AI 自己调用工具把目录列了一遍，回答是 5 个，跟终端里的结果对得上。
 
 之前我也用相同的提示词让其他模型复刻过 Cursor，比如 Claude Fable 5.1 是之前完成度最高的，能逐个文件接受或拒绝 AI 的改动，但界面跟 Cursor 3 差得还挺远：
 
-![Claude Fable 5.1 的复刻 Cursor](https://pic.yupi.icu/1/1788318274280-ab2d1044-f309-4dc1-8400-ce9835de8291.png)
+![Claude Fable 5.1 的复刻 Cursor](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1788318274280-ab2d1044-f309-4dc1-8400-ce9835de82-27776fbba8)
 
 GPT-6 Astra 那次自己取了个产品名叫 orbit，设计感很强，但它走的是自己的产品思路，功能丰富度也差 Fable 5.1 一截：
 
-![GPT-6 Astra 的复刻 Cursor](https://pic.yupi.icu/1/gpt6astra-shizhan-case3-agents-window-07a45833.png)
+![GPT-6 Astra 的复刻 Cursor](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-shizhan-case3-agents-window-07a45833-e9ac8e6902)
 
 回到 Opus 5.5，切换到 Editor Window 编辑器模式，文件高亮、代码高亮、代码补全一应俱全，还能在右侧打开 AI 面板随时和 AI 对话。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-opus55-03-editor-9d42f4a7.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-opus55-03-editor-9d42f4a7-4c567b533a)
 
 此外，还有完整的 Git 管理面板，改了哪些文件、提交记录都能直接看到：
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-opus55-04-git-a6b369c7.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-opus55-04-git-a6b369c7-a2297bc6b6)
 
 如果我直接把这个产品发布了，我敢打赌你绝对想不到这是 AI 一把梭的！夯爆了！
 
@@ -298,15 +302,15 @@ GPT-6 Sol 只用了 27 分钟，差不多是 Opus 5.5 的一半时间。
 
 进入主页，默认是 Editor Window 编辑器模式，也能实现代码高亮和自动补全，但从第一眼的界面上来看就已经输了。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-gpt6sol-01-editor-5a892f8f.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-gpt6sol-01-editor-5a892f8f-bacfd4cf56)
 
 再看看 Agents 面板，布局是合理的，但配色有点怪，给我一种想让人看起来很牛、实际上很一般的感觉。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-gpt6sol-02-agents-6cfde5a3.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-gpt6sol-02-agents-6cfde5a3-d582021362)
 
 任务可以正常执行，但整个执行界面也是浓浓的 AI 味儿，GPT 的风格一贯如此。
 
-![](https://pic.yupi.icu/1/opus55vsgpt6sol-case5-gpt6sol-03-task-0fecf778.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/opus55vsgpt6sol-case5-gpt6sol-03-task-0fecf778-67bf6b12e9)
 
 功能丰富度也远远不如 Opus 5.5，不支持搜索，没有 Git 能力，没有终端，也没有那么多布局和面板，页面上很多按钮都是死的。
 
@@ -314,7 +318,7 @@ GPT-6 Sol 只用了 27 分钟，差不多是 Opus 5.5 的一半时间。
 
 跟之前测过的国产模型比一比，这是 Kimi K3 当时用同一段提示词做的版本：
 
-![Kimi K3 的复刻 Cursor](https://pic.yupi.icu/1/1784190810038-c3d24d7d-f500-46ff-bb62-b2c9205005f2-20260717144633410.png)
+![Kimi K3 的复刻 Cursor](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1784190810038-c3d24d7d-f500-46ff-bb62-b2c9205005-46582e3ff3)
 
 说白了，我感觉 GPT-6 Sol 在这道题上的水平跟目前的国产模型差不多。在看完 Opus 5.5 之后，只能给到拉完了……
 
@@ -326,7 +330,7 @@ GPT-6 Sol 只用了 27 分钟，差不多是 Opus 5.5 的一半时间。
 
 虽然我老是吐槽 A 社，但不得不承认，人家的模型能力确实强。嘴上建议大家放缓发展，自己却在那嘎嘎进步，别人都慢下来了，还怎么超过你？
 
-![](https://pic.yupi.icu/1/0e590bf44c165050c7fc4917cec91cad.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/0e590bf44c165050c7fc4917cec91cad-19fd543723)
 
 Claude Opus 5.5 的能力比上一个版本提升明显多了，我甚至觉得它比 Fable 5.1 还要强，复刻 Cursor 那道题就是最好的证明。
 
@@ -346,7 +350,7 @@ GPT-6 Sol 就友好多了。之前的 GPT-6 Astra 能力是强，但额度消耗
 
 最后再送大家一段由 Claude Opus 5.5 自主生成的 3D 网页动画《牛来骑车》，这一段花了我几十块钱：
 
-![](https://pic.yupi.icu/1/image-20260923131228466.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260923131228466-9231cee966)
 
 
 

@@ -1,146 +1,111 @@
 import { defineConfig } from "vuepress/config";
-import extraSideBar from "./extraSideBar";
 import footer from "./footer";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 
+/**
+ * 模型动态指南
+ *
+ * One-shot migration of liyupi/ai-guide's "Vibe Coding 零基础教程 / 15 模型动态"
+ * section. From here the guide is maintained independently: nothing is pulled
+ * from upstream again and nothing is pushed back (grill Q14=B). Content stays
+ * CC BY-NC-SA 4.0 with 程序员鱼皮 credited - see LICENSE and the footer.
+ *
+ * GUIDE_BASE_URL is the only place the public host is written. The upstream
+ * config hardcoded https://ai.codefather.cn in five spots (canonical, sitemap,
+ * feed, seo url, …), which is exactly how a fork keeps advertising someone
+ * else's site; and the images were hot-linked from pic.yupi.icu, i.e. the
+ * upstream owner's bucket. Both are gone: images now live in our own R2 and
+ * this domain drives every generated URL.
+ */
 const author = "程序员鱼皮";
-const domain = "https://ai.codefather.cn";
-const tags = [
-  "ai",
-  "deepseek",
-  "AI 资讯",
-  "人工智能",
-  "AI 行业趋势",
-  "AI 技术",
-  "AI 新闻",
-  "AI 动态",
-  "AI 市场分析",
-  "AI 模型",
-  "AI 独家分析",
-  "AI 深度解读",
-];
+const domain = (process.env.GUIDE_BASE_URL || "https://ai-guide.pages.dev").replace(/\/+$/, "");
 
 export default defineConfig({
-  title: "鱼皮 AI 知识库",
+  title: "AI 模型实测指南",
   description:
-    "鱼皮 AI 知识库 - 免费 DeepSeek 教程｜工具站｜资源库，是一站式开源免费的人工智能知识分享平台，汇集 Deepseek、GPT 等热门 AI 工具介绍、使用指南、技巧分享、应用场景、AI 变现、行业资讯、教程资源汇总，提供系统化的 AI 教程、精选 AI 资源，助你快速掌握 AI 技术，成为 AI 专家！",
+    "大模型编程与多模态能力的实测记录：同一套提示词、同一批项目，横向对比各模型的完成度、耗时与费用。",
+
   head: [
-    // 站点图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
-    // SEO
-    [
-      "meta",
-      {
-        name: "keywords",
-        content:
-          "ai, deepseek, AI 资讯，人工智能，AI 行业趋势，AI 技术，AI 新闻，AI 动态，AI 市场分析，AI 模型，AI 独家分析，AI 深度解读",
-      },
-    ],
-    // 百度统计
-    [
-      "script",
-      {},
-      `
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?6998d638562bceef30be297767e91d64";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-      `,
-    ],
+    ["meta", { name: "keywords", content: "AI 模型,大模型评测,编程能力实测,AI 编程,模型对比" }],
+    /*
+     * Upstream injected Baidu analytics (hm.baidu.com) here and the build also
+     * added Google Analytics (GTM-WVS9HM6W) plus vuepress-plugin-baidu-autopush.
+     * All three tracked the upstream owner's properties and are removed with the
+     * fork; a reader on this site should not be sending traffic data to another
+     * site's analytics account.
+     */
   ],
+
+  /*
+   * Permalinks are declared per article in .vuepress/articles.json and written by
+   * scripts/apply-articles.mjs, so URLs are ASCII (/models/claude-fable-5/)
+   * instead of the percent-encoded gibberish this site's Chinese filenames used
+   * to produce. That is what lets 模型星图 deep-link to a specific article.
+   * This fallback only matters for a page that somehow has no frontmatter.
+   */
   permalink: "/:slug",
 
-  // 监听文件变化，热更新
-  extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
+  extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts", ".vuepress/articles.json"],
+
   markdown: {
-    // 开启代码块的行号
     lineNumbers: true,
-    // 支持 4 级以上的标题渲染
     extractHeaders: ["h2", "h3", "h4", "h5", "h6"],
   },
+
   // @ts-ignore
   plugins: [
     ["@vuepress/back-to-top"],
-    // Google 分析
-    [
-      "@vuepress/google-analytics",
-      {
-        ga: "GTM-WVS9HM6W", // 补充自己的谷歌分析 ID，比如 UA-00000000-0
-      },
-    ],
     ["@vuepress/medium-zoom"],
     // https://github.com/lorisleiva/vuepress-plugin-seo
     [
       "seo",
       {
-        siteTitle: (_, $site) => $site.title + " - 免费 DeepSeek 教程｜工具站｜资源库",
-        title: ($page) => $page.title + " - 免费 DeepSeek 教程｜工具站｜资源库",
+        siteTitle: (_, $site) => $site.title,
+        title: ($page) => $page.title,
         description: ($page) => $page.frontmatter.description || $page.description,
-        author: (_, $site) => $site.themeConfig.author || author,
-        tags: ($page) => $page.frontmatter.tags || tags,
-        type: ($page) => "article",
-        url: (_, $site, path) => ($site.themeConfig.domain || domain || "") + path,
-        image: ($page, $site) =>
-          $page.frontmatter.image &&
-          (($site.themeConfig.domain && !$page.frontmatter.image.startsWith("http")) || "") + $page.frontmatter.image,
+        /*
+         * Every option here must be a function: the plugin calls each one
+         * (options.tags(...), options.image(...)), so a plain array or `false`
+         * crashes the build with "options.tags is not a function". image is left
+         * unset on purpose - the plugin's default returns undefined for a page
+         * with no frontmatter.image, and empty content is skipped, which is what
+         * we want since these articles carry no per-page hero image.
+         */
+        author: () => author,
+        tags: () => ["AI 模型", "大模型评测", "AI 编程"],
+        type: () => "article",
+        url: (_, $site, path) => ($site.themeConfig.domain || "") + path,
         publishedAt: ($page) => $page.frontmatter.date && new Date($page.frontmatter.date),
         modifiedAt: ($page) => $page.lastUpdated && new Date($page.lastUpdated),
       },
     ],
     // https://github.com/ekoeryanto/vuepress-plugin-sitemap
-    [
-      "sitemap",
-      {
-        hostname: domain,
-      },
-    ],
-    // https://github.com/IOriens/vuepress-plugin-baidu-autopush
-    ["vuepress-plugin-baidu-autopush"],
+    ["sitemap", { hostname: domain }],
     // https://github.com/zq99299/vuepress-plugin/tree/master/vuepress-plugin-tags
     ["vuepress-plugin-tags"],
     // https://github.com/znicholasbrown/vuepress-plugin-code-copy
-    [
-      "vuepress-plugin-code-copy",
-      {
-        successText: "代码已复制",
-      },
-    ],
+    ["vuepress-plugin-code-copy", { successText: "代码已复制" }],
     // https://github.com/webmasterish/vuepress-plugin-feed
-    [
-      "feed",
-      {
-        canonical_base: domain,
-        count: 10000,
-        // 需要自动推送的文档目录
-        posts_directories: [],
-      },
-    ],
+    ["feed", { canonical_base: domain, count: 200, posts_directories: [] }],
     // https://github.com/tolking/vuepress-plugin-img-lazy
     ["img-lazy"],
   ],
-  // 主题配置
+
   themeConfig: {
     logo: "/logo.png",
+    /** single source of the public host, consumed by seo/sitemap/feed above */
+    domain,
     nav: navbar,
     sidebar,
     lastUpdated: "最近更新",
-
-    // GitHub 仓库位置
-    repo: "liyupi/ai-guide",
-    docsBranch: "master",
-
-    // 编辑链接
-    editLinks: true,
-    editLinkText: "完善页面",
-
-    // @ts-ignore
-    // 底部版权信息
+    /*
+     * Upstream pointed `repo` + "完善页面" edit links at liyupi/ai-guide. That
+     * invites readers to send pull requests to a repository this guide no longer
+     * syncs with, so both are off.
+     */
+    editLinks: false,
     footer,
-    // 额外右侧边栏
-    extraSideBar,
   },
 });

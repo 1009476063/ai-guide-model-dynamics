@@ -1,3 +1,7 @@
+---
+permalink: /models/gpt-6-astra-launch/
+title: "GPT-6 Astra 发布解读"
+---
 # GPT-6 Astra 发布解读 - 跑分、官方案例和争议
 
 > OpenAI 号称全世界最智能的模型，主打像人一样操作电脑
@@ -14,7 +18,7 @@
 
 **现在觉得我们已经进入 AGI 时代，并不算什么不合理的想法，欢迎来到 AGI 时代。**
 
-![](https://pic.yupi.icu/1/image-20260904101301051.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260904101301051-06e3745a90)
 
 我本来是想第一时间跑一轮实测的，案例都准备好了。结果打开 ChatGPT 翻了一圈模型列表，没有；去看 API，也没有……
 
@@ -24,7 +28,7 @@
 
 OpenAI 自己也知道这件事说不过去，于是负责 ChatGPT 的 Tibo 发了一条推特，说会给每一个订阅了付费计划但还没拿到 Astra 权限的用户，按天补偿额度重置，一天没用上就补一次。
 
-![](https://pic.yupi.icu/1/gpt%20%E5%A8%98%E9%A2%9D%E5%BA%A6%E9%87%8D%E7%BD%AE%E8%A1%A8%E6%83%85%E5%8C%85.jpg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt-80ca8491e3)
 
 行行行，原谅你了（正好周五我可以摸鱼了~
 
@@ -38,21 +42,21 @@ OpenAI 自己也知道这件事说不过去，于是负责 ChatGPT 的 Tibo 发�
 
 他们把 GPT-6 Astra 称为「全世界最强的电脑操作模型」，AI 可以像人一样看屏幕、点按钮、填表单、刷应用，无所不能。
 
-![](https://pic.yupi.icu/1/OpenAI%20Twitter%20%E6%88%AA%E5%9B%BE.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/openai-twitter-f9dd160788)
 
 先看看跑分，有个叫 ScreenSpot-Pro 的测试专门考模型能不能看懂屏幕、并且精准点到该点的位置，上一代 GPT-5.6 Sol 是 76.9%，Astra 直接干到了 92.7%。
 
-![ScreenSpot-Pro 跑分](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E8%B7%91%E5%88%86-ScreenSpotPro-ac1e8238.png)
+![ScreenSpot-Pro 跑分](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-screenspotpro-ac1e8238-c003eeb56f)
 
 还有一个更接近真实工作的测试叫 OSWorld，就是把 AI 扔进一台真电脑里让它自己干活。Astra 的完成率是 72.6%，比 Sol 的 65.7% 高了不少。更关键的是完成同样的任务，Sol 平均要 75 分钟，Astra 只要 40 分钟！
 
-![OSWorld 跑分](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E8%B7%91%E5%88%86-OSWorld-fda4083d.png)
+![OSWorld 跑分](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-osworld-fda4083d-7e66764195)
 
 我觉得主攻「屏幕理解」是个正确的方向。现实里绝大多数软件根本没有 API，很多公司的内部系统还是二十年前写的，文档都不知道在哪。但所有软件都有界面，那界面本身就是最通用的 API，AI 不用等谁来适配，自己看屏幕操作就完了。
 
 GPT-6 Astra 的编程能力也有大幅提升。Terminal-Bench 4.0 考的是在终端里完成软件开发、系统配置和数据分析这类复杂任务，Astra 拿到 57.9%，Sol 只有 37.3%，Claude Fable 5.1 是 55.8%。
 
-![Terminal-Bench 4.0 跑分](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E8%B7%91%E5%88%86-TerminalBench4-7aade967.png)
+![Terminal-Bench 4.0 跑分](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-terminalbench4-7aade967-122c415d14)
 
 不过这次最让我意外的跑分是 ARC-AGI-3。
 
@@ -64,13 +68,13 @@ GPT-6 Astra 的编程能力也有大幅提升。Terminal-Bench 4.0 考的是在�
 
 而 Astra 做到了 99.9 分！
 
-![ARC-AGI-3 跑分](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E8%B7%91%E5%88%86-ARC-AGI-3-889f6b76.png)
+![ARC-AGI-3 跑分](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-arc-agi-3-889f6b76-7d9e0ff529)
 
 把这称作 AI 的开悟时刻，不过分吧？
 
 再看看 GPT-6 的数学能力，FrontierMath Tier 4 这套题 Astra 拿到 97.6%，基本上算是打穿了。
 
-![FrontierMath Tier 4 跑分](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E8%B7%91%E5%88%86-FrontierMath-f6540c34.png)
+![FrontierMath Tier 4 跑分](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-frontiermath-f6540c34-1b13d73595)
 
 
 
@@ -96,29 +100,29 @@ GPT-6 Astra 的编程能力也有大幅提升。Terminal-Bench 4.0 考的是在�
 
 先看一个最能体现「操作电脑」能力的。官方让 Astra 打开 KiCad 这个电路设计软件，把一张电子原理图变成可以直接拿去生产的电路板布线图，元器件怎么摆、铜线怎么走全都是它自己完成的。
 
-![Astra 在 KiCad 里完成电路板布线](https://pic.yupi.icu/1/gpt6astra-%E7%BA%BF%E8%B7%AF%E6%9D%BF%E6%A1%88%E4%BE%8B-c5fe28c2.png)
+![Astra 在 KiCad 里完成电路板布线](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-c5fe28c2-54150f595a)
 
 这活儿平时是硬件工程师一点一点手工拖出来的，也是整个电子设计流程里最费时间的环节之一。
 
 然后是 3D 建模能力，官方展示了让 Astra 直接建出一整座城市场景，楼体、道路、绿化带、斑马线、路上的车，一个都不少。
 
-![Astra 建出来的 3D 城市场景](https://pic.yupi.icu/1/gpt6astra-%E5%9F%8E%E5%B8%82%E5%9C%BA%E6%99%AF3D%E5%BB%BA%E6%A8%A1-0455922e.png)
+![Astra 建出来的 3D 城市场景](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-3d-0455922e-2ad040041b)
 
 不光是建静态模型。官方还演示了先在 Blender 里把一栋房子建出来，再导进 Unreal Engine 5 变成可以自由走动的场景，让设计师和客户在开工之前就能提前逛一遍。
 
-![](https://pic.yupi.icu/1/image-20260904110602909.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260904110602909-aa14b2b7ad)
 
 再看看游戏开发能力，官方直接在发布页面里嵌了两个能玩的网页项目，鼠标点进去就能上手。
 
 第一个是卡丁车竞速游戏，这是完全用 AI 程序化生成的 Three.js 卡丁车赛车，赛道和场景不是靠网上的素材堆出来的，是靠代码算出来的。
 
-![Tidal Rush 卡丁车游戏的实际画面](https://pic.yupi.icu/1/gpt6astra-3D%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F-90c1852a.png)
+![Tidal Rush 卡丁车游戏的实际画面](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-3d-90c1852a-99b6089853)
 
 我自己上手跑了两圈，速度表、漂移条、小地图、名次和圈数都在，手感也不飘。沙滩的高光、水面的透光、椰子树的剪影、彩旗的排布，这水准我觉得已经超过不少外包团队交的活儿了。
 
 第二个案例更酷炫，是个宇宙飞船船厂。每换一个随机种子就能生成 1000 艘不重复但可复现的飞船，全部由 177 个模块化零件拼出来，每一艘还带尺寸、载货量、推力、装配模块数这些参数。
 
-![飞船船厂里 1000 艘飞船的图鉴](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E6%A1%88%E4%BE%8B-VoidExplorer%E9%80%A0%E8%88%B9%E5%8E%82-da08aaad.png)
+![飞船船厂里 1000 艘飞船的图鉴](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-voidexplorer-da08aaad-0c34a60c2e)
 
 左边是舰队列表，中间是整页图鉴，右边是选中那艘船的详细规格，还能导出成一张拼版图。
 
@@ -126,13 +130,13 @@ GPT-6 Astra 的编程能力也有大幅提升。Terminal-Bench 4.0 考的是在�
 
 Matt Shumer 让 Astra 在 Unreal Engine 里造一个世界，往里面填满由 Astra 驱动的角色，要求他们必须互相合作才能活下去。第二天他在卧室里听见客厅有人说话，以为家里进人了，走出去还有点害怕，结果是那些 AI 角色自己开始互相聊天了。
 
-![](https://pic.yupi.icu/1/image-20260904111049540.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260904111049540-75cef1dcf5)
 
 一位研究 T 细胞三十五年的免疫学教授，只给了 AI 一句「做一个 5 分钟讲 T 细胞的教学视频」，Astra 自己挑了视频框架、调文生图做画面、还主动建议用 AI 配音，最后一次性把讲什么、怎么讲、配什么画面全组装好了。
 
 教授说：凭他三十五年的经验，他自己也讲不了比这更好。
 
-![](https://pic.yupi.icu/1/image-20260904111253107.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260904111253107-bc47ea588a)
 
 
 
@@ -142,7 +146,7 @@ Matt Shumer 让 Astra 在 Unreal Engine 里造一个世界，往里面填满由 
 
 这个问题其实有答案。OpenAI 有一个 [开发者展示馆](https://developers.openai.com/showcase)，里面收录了五十多个用 Codex 做出来的项目，而且 **每个案例的详情页都把当时用的提示词原文一字不改地贴出来了，后面还列了每一轮迭代都改了什么**。
 
-![OpenAI 官方开发者展示馆](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9-%E5%B1%95%E7%A4%BA%E9%A6%86%E7%B4%A2%E5%BC%95-8d2e8964.png)
+![OpenAI 官方开发者展示馆](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-8d2e8964-bd4381f8cd)
 
 虽然这个展示馆不是这次跟 Astra 一起发的，里面的案例大多是用 GPT-5.5 和 5.6 做的，但我觉得值得给大家分享一下，看官方的提示词能收获不少 AI 编程的启发。
 
@@ -156,7 +160,7 @@ Run build and lint, then play several runs in the browser to verify collisions, 
 
 意思是先跑构建和代码检查，然后让 AI 在浏览器里玩几局，把碰撞、计分、失败和重开都验一遍，控制台不许有报错。
 
-![Glass Towers 玻璃塔游戏](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9-%E6%8F%90%E7%A4%BA%E8%AF%8D%E9%A1%B5-GlassTowers-04ea8b94.png)
+![Glass Towers 玻璃塔游戏](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-glasstowers-04ea8b94-a35fde5347)
 
 这就是我一直在讲的 Loop Engineering，让 AI 写完自己验，验证不通过就自己修复。官方把它写成了提示词里的硬要求。想系统学这套方法，可以阅读本教程经验技巧板块中的《Loop Engineering 保姆级教程》。
 
@@ -164,13 +168,13 @@ Run build and lint, then play several runs in the browser to verify collisions, 
 
 小镇模拟游戏的提示词最后一段，是让模型先用文生图工具画几张玩法概念图，把视觉方向定下来，再开始写代码。
 
-![MiniTown 小镇模拟游戏](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E6%A1%88%E4%BE%8B-MiniTown%E5%B0%8F%E9%95%87-27923b7e.png)
+![MiniTown 小镇模拟游戏](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-minitown-27923b7e-9621b57075)
 
 如果你平时让 AI 做前端总觉得出来的东西土，这一招直接助你羽化登仙。
 
 剩下的案例我就不逐个讲了，放一张成品感受一下水平。
 
-![Terrain Mixer 程序化地形生成器](https://pic.yupi.icu/1/gpt6astra-%E5%AE%98%E6%96%B9%E6%A1%88%E4%BE%8B-TerrainMixer%E5%9C%B0%E5%BD%A2%E7%94%9F%E6%88%90-4100a914.png)
+![Terrain Mixer 程序化地形生成器](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-terrainmixer-4100a914-d65ee08ed9)
 
 
 
@@ -180,7 +184,7 @@ Run build and lint, then play several runs in the browser to verify collisions, 
 
 第三方评测机构 Artificial Analysis 在发布当天就出了独立评测，结论跟官方不太一样。在他们的综合智能指数里，Astra 是 61 分，跟上一代 GPT-5.6 Sol 一模一样，比 Claude Fable 5.1 还低了 5 分。
 
-![Artificial Analysis 的独立评测](https://pic.yupi.icu/1/gpt6astra-%E7%AC%AC%E4%B8%89%E6%96%B9-ArtificialAnalysis-56a12dd4.png)
+![Artificial Analysis 的独立评测](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-artificialanalysis-56a12dd4-e2e3ae205c)
 
 图里右边那一栏是单个任务的成本，Astra 1.67 美元，GPT-5.6 Sol 0.94 美元。**智能指数一分没涨，成本快翻倍了！**
 
@@ -190,7 +194,7 @@ Run build and lint, then play several runs in the browser to verify collisions, 
 
 而且根据历史情况，我们可以大胆假设，GPT-6 Astra 大概会像其他模型一样，第一周用起来像是在跟神说话，一周后厂商为了省算力搞一波降级，再用起来就像是在跟三岁小孩说话，两周后被用户投诉多了，就再把智力调回来一点，几周之后再发布 GPT-6.1，然后循环……
 
-![](https://pic.yupi.icu/1/gpt%20%E5%A8%98%E5%8F%AF%E7%88%B1%E8%A1%A8%E6%83%85%E5%8C%85.jpg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt-3ba3d8c8ed)
 
 
 

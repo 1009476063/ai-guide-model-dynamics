@@ -1,26 +1,35 @@
 {
-  "name": "codefather",
+  "name": "ai-guide-model-dynamics",
   "version": "1.0.0",
+  "private": true,
+  "description": "AI 模型实测指南 - 模型动态（自 liyupi/ai-guide 一次性迁移，独立维护）",
   "scripts": {
-    "generate:sidebar": "node ./.vuepress/scripts/generateSidebar.js",
-    "generate:readme": "node ./.vuepress/scripts/genReadme.js",
-    "getMdNumber": "node ./.vuepress/scripts/getMdNumber.js",
-    "docs:dev": "vuepress dev .",
-    "pre-docs:build": "npm run generate:sidebar ./AI && npm run generate:readme ./AI",
-    "docs:build": "vuepress build .",
+    "prepare-content": "node scripts/apply-articles.mjs",
+    "docs:dev": "npm run prepare-content && vuepress dev .",
+    "docs:build": "npm run prepare-content && vuepress build .",
     "serve": "serve ./.vuepress/dist"
   },
-  "license": "MIT",
+  "//": [
+    "NODE_OPTIONS=--openssl-legacy-provider is load-bearing, not decoration. VuePress 1.9 ",
+    "drives webpack 4, whose hash function is MD4; OpenSSL 3 (Node 17+) removed that ",
+    "algorithm, so a plain `vuepress build` on Node 24 dies with ",
+    "'error:0308010C:digital envelope routines::unsupported'. Measured: build_exit=1 ",
+    "without the flag, 394 pages produced with it. Keep it until the toolchain moves off ",
+    "webpack 4, and set it in CI as well as here.",
+    "",
+    "google-analytics and baidu-autopush were dropped with the fork: they reported to ",
+    "upstream's analytics properties. Content licence (CC BY-NC-SA 4.0, 程序员鱼皮) is ",
+    "carried in LICENSE plus the site footer."
+  ],
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.10",
-    "@vuepress/plugin-google-analytics": "^1.9.10",
     "@vuepress/plugin-medium-zoom": "^1.9.10",
     "vuepress": "^1.9.10",
-    "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-feed": "^0.1.9",
     "vuepress-plugin-seo": "^0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-plugin-tags": "^1.0.2"
+    "vuepress-plugin-tags": "^1.0.2",
+    "wrangler": "^4.152.0"
   },
   "dependencies": {
     "vuepress-plugin-code-copy": "^1.0.6",

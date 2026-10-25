@@ -1,32 +1,15 @@
 /**
- * 底部版权信息
+ * Site footer.
+ *
+ * Upstream listed its own companion sites and an ICP filing number that does not
+ * belong to this deployment. Copyright now carries the content licence instead,
+ * which is the one attribution obligation that must survive a fork (CC BY-NC-SA
+ * requires crediting 程序员鱼皮 and keeping the same licence).
  */
 export default {
-  friendLinks: [
-    {
-      label: "站长 - 程序员鱼皮",
-      // icon: "/icon/user.svg",
-      href: "https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah",
-    },
-    {
-      label: "鱼鸢网络",
-      href: "https://yuyuanweb.com/",
-    },
-    {
-      label: "老鱼简历",
-      href: "https://www.laoyujianli.com/",
-    },
-    {
-      label: "面试鸭",
-      href: "https://www.mianshiya.com/",
-    },
-    {
-      label: "编程学习圈",
-      href: "https://www.codefather.cn/",
-    },
-  ],
+  friendLinks: [],
   copyright: {
-    href: "https://beian.miit.gov.cn/",
-    name: "沪ICP备19026706号-6",
+    href: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    name: "内容 CC BY-NC-SA 4.0 · 著作权 程序员鱼皮",
   },
 };

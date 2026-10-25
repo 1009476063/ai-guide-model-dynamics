@@ -1,0 +1,139 @@
+{
+  "comment": [
+    "Single source of truth for the 模型动态 slice. Drives three things that must",
+    "never disagree: the deterministic permalink (ASCII, so links are stable and",
+    "shareable), the sidebar order (the upstream generator sorted by birthtime, which",
+    "a fresh clone cannot reproduce), and the model -> article table that the",
+    "ai-model-world 查看评测文章 button resolves against.",
+    "",
+    "models lists the snapshot model slugs for which THIS article is the answer.",
+    "Exactly one article may claim a model; an unclaimed model falls back to the",
+    "collection page rather than being guessed at. Every slug below was checked",
+    "against data/models.json, not inferred from the filename: naive matching links",
+    "GPT-5 to the GPT-5.6 article, and GPT Images 2.5 has no snapshot model at all",
+    "(the closest are GPT Image 2.5 Flare / Sunburst, which this article is not",
+    "about), so it is deliberately left unclaimed."
+  ],
+  "collection": "/models/",
+  "articles": [
+    { "file": "00 模型动态导读.md", "path": "/models/", "title": "模型动态" },
+    {
+      "file": "Claude Fable 5 编程能力实测 - 对比 Opus 4.8 和 GPT-5.5.md",
+      "path": "/models/claude-fable-5/",
+      "title": "Claude Fable 5 编程能力实测",
+      "models": ["anthropic-claude-fable-5"]
+    },
+    {
+      "file": "Claude Fable 5.1 编程能力实测 - 3 个项目案例.md",
+      "path": "/models/claude-fable-5-1/",
+      "title": "Claude Fable 5.1 编程能力实测",
+      "models": ["anthropic-claude-fable-5-1"]
+    },
+    {
+      "file": "Claude Opus 5 编程能力实测 - 7 个项目案例.md",
+      "path": "/models/claude-opus-5/",
+      "title": "Claude Opus 5 编程能力实测",
+      "models": ["anthropic-claude-opus-5"]
+    },
+    {
+      "file": "Claude Opus 5.5 双模型横评 - 对比 GPT-6 Sol 实测 5 个案例.md",
+      "path": "/models/claude-opus-5-5-vs-gpt-6-sol/",
+      "title": "Claude Opus 5.5 对比 GPT-6 Sol 双模型横评",
+      "models": ["anthropic-claude-opus-5-5", "openai-gpt-6-sol"]
+    },
+    {
+      "file": "DeepSeek V4 Flash Vision 视觉能力实测 - 8 个场景.md",
+      "path": "/models/deepseek-v4-flash-vision/",
+      "title": "DeepSeek V4 Flash Vision 视觉能力实测",
+      "models": ["deepseek-deepseek-v4-flash-vision-exp"]
+    },
+    {
+      "file": "DeepSeek V4 Pro 编程能力实测 - 7 个项目案例.md",
+      "path": "/models/deepseek-v4-pro/",
+      "title": "DeepSeek V4 Pro 编程能力实测",
+      "models": ["deepseek-deepseek-v4-pro"]
+    },
+    {
+      "file": "DeepSeek V4.1 Flash 1017 编程能力实测 - 4 个项目案例.md",
+      "path": "/models/deepseek-v4-1-flash-1017/",
+      "title": "DeepSeek V4.1 Flash 1017 编程能力实测",
+      "models": ["deepseek-deepseek-v4-1-flash-1017"]
+    },
+    {
+      "file": "DeepSeek V4.1 Flash 编程能力实测 - 对比 V4 Pro 和 GLM-5.3-Flash.md",
+      "path": "/models/deepseek-v4-1-flash/",
+      "title": "DeepSeek V4.1 Flash 编程能力实测",
+      "models": ["deepseek-deepseek-v4-1-flash"]
+    },
+    {
+      "file": "GLM-5.3 三模型横评 - DeepSeek Harness 统一评测.md",
+      "path": "/models/glm-5-3-three-model/",
+      "title": "GLM-5.3 三模型横评",
+      "models": ["zhipuai-glm-5-3"]
+    },
+    {
+      "file": "GLM-5.3-Flash 编程能力实测 - 3 个项目案例.md",
+      "path": "/models/glm-5-3-flash/",
+      "title": "GLM-5.3-Flash 编程能力实测",
+      "models": ["zhipuai-glm-5-3-flash"]
+    },
+    {
+      "file": "GPT Images 2.5 生图能力实测 - 10 个创意玩法.md",
+      "path": "/models/gpt-images-2-5/",
+      "title": "GPT Images 2.5 生图能力实测"
+    },
+    {
+      "file": "GPT-5.6 三模型横评 - 全栈项目实测.md",
+      "path": "/models/gpt-5-6-three-model/",
+      "title": "GPT-5.6 三模型横评",
+      "models": ["openai-gpt-5-6-sol", "openai-gpt-5-6-terra", "openai-gpt-5-6-luna"]
+    },
+    {
+      "file": "GPT-6 Astra 发布解读 - 跑分、官方案例和争议.md",
+      "path": "/models/gpt-6-astra-launch/",
+      "title": "GPT-6 Astra 发布解读"
+    },
+    {
+      "file": "GPT-6 Astra 编程能力实测 - 4 个项目案例.md",
+      "path": "/models/gpt-6-astra/",
+      "title": "GPT-6 Astra 编程能力实测",
+      "models": ["openai-gpt-6-astra"]
+    },
+    {
+      "file": "Gemini 3.8 Flash 编程能力实测 - 3 个项目案例.md",
+      "path": "/models/gemini-3-8-flash/",
+      "title": "Gemini 3.8 Flash 编程能力实测",
+      "models": ["google-gemini-3-8-flash"]
+    },
+    {
+      "file": "Gemini 4 Argon 编程能力实测 - 3 个项目案例.md",
+      "path": "/models/gemini-4-argon/",
+      "title": "Gemini 4 Argon 编程能力实测",
+      "models": ["google-gemini-4-argon"]
+    },
+    {
+      "file": "Jev 决策模型实测 - 从入门到实战.md",
+      "path": "/models/jev-decision-model/",
+      "title": "Jev 决策模型实测",
+      "models": ["typesafe-jev-latest"]
+    },
+    {
+      "file": "Kimi K3 编程能力实测 - 7 个项目案例.md",
+      "path": "/models/kimi-k3/",
+      "title": "Kimi K3 编程能力实测",
+      "models": ["moonshotai-kimi-k3"]
+    },
+    {
+      "file": "Opus 4.8 四模型横评 - 全栈项目实测.md",
+      "path": "/models/opus-4-8-four-model/",
+      "title": "Opus 4.8 四模型横评",
+      "models": ["anthropic-claude-opus-4-8"]
+    },
+    {
+      "file": "小米 MiMo 编程能力实测 - 4 个项目案例.md",
+      "path": "/models/xiaomi-mimo/",
+      "title": "小米 MiMo 编程能力实测",
+      "models": ["xiaomi-mimo-v2-5-pro"]
+    }
+  ]
+}

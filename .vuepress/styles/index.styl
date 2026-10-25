@@ -1,0 +1,16 @@
+/*
+ * Code blocks in these articles contain long single-line prompts (a 700px-wide
+ * ```markdown block in the Claude Fable 5 piece), and the theme's
+ * .line-numbers-mode wrapper measured ~8px wider than a 390px viewport on
+ * mobile, which pushed the whole document into horizontal scroll.
+ *
+ * Constrain the wrapper and let the <pre> scroll inside it, rather than hiding
+ * overflow at the document level: the prompt text still has to be reachable,
+ * and a page that scrolls sideways on a phone is worse than one that scrolls
+ * a code block.
+ */
+div[class*="language-"]
+  max-width 100%
+  pre
+    max-width 100%
+    overflow-x auto

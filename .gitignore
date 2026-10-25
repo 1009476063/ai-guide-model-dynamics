@@ -127,3 +127,20 @@ dist
 
 temp.ts
 AGENTS.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
+
+# migration scratch: 627 MB of downloaded upstream images plus the maps that
+# drive the upload and the markdown rewrite. Regenerate with
+#   node scripts/migrate-images.mjs && node scripts/upload-images-r2.mjs
+.image-cache/
+.image-manifest.json
+.image-url-map.json
+.upload-done.json
+
+# never commit minted storage credentials
+.r2-s3.json

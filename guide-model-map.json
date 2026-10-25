@@ -1,0 +1,28 @@
+{
+  "generatedFrom": "ai-guide 15 模型动态 (migrated snapshot)",
+  "baseUrl": "https://ai-guide-418.pages.dev",
+  "collection": "https://ai-guide-418.pages.dev/models/",
+  "models": {
+    "anthropic-claude-fable-5": "https://ai-guide-418.pages.dev/models/claude-fable-5/",
+    "anthropic-claude-fable-5-1": "https://ai-guide-418.pages.dev/models/claude-fable-5-1/",
+    "anthropic-claude-opus-5": "https://ai-guide-418.pages.dev/models/claude-opus-5/",
+    "anthropic-claude-opus-5-5": "https://ai-guide-418.pages.dev/models/claude-opus-5-5-vs-gpt-6-sol/",
+    "openai-gpt-6-sol": "https://ai-guide-418.pages.dev/models/claude-opus-5-5-vs-gpt-6-sol/",
+    "deepseek-deepseek-v4-flash-vision-exp": "https://ai-guide-418.pages.dev/models/deepseek-v4-flash-vision/",
+    "deepseek-deepseek-v4-pro": "https://ai-guide-418.pages.dev/models/deepseek-v4-pro/",
+    "deepseek-deepseek-v4-1-flash-1017": "https://ai-guide-418.pages.dev/models/deepseek-v4-1-flash-1017/",
+    "deepseek-deepseek-v4-1-flash": "https://ai-guide-418.pages.dev/models/deepseek-v4-1-flash/",
+    "zhipuai-glm-5-3": "https://ai-guide-418.pages.dev/models/glm-5-3-three-model/",
+    "zhipuai-glm-5-3-flash": "https://ai-guide-418.pages.dev/models/glm-5-3-flash/",
+    "openai-gpt-5-6-sol": "https://ai-guide-418.pages.dev/models/gpt-5-6-three-model/",
+    "openai-gpt-5-6-terra": "https://ai-guide-418.pages.dev/models/gpt-5-6-three-model/",
+    "openai-gpt-5-6-luna": "https://ai-guide-418.pages.dev/models/gpt-5-6-three-model/",
+    "openai-gpt-6-astra": "https://ai-guide-418.pages.dev/models/gpt-6-astra/",
+    "google-gemini-3-8-flash": "https://ai-guide-418.pages.dev/models/gemini-3-8-flash/",
+    "google-gemini-4-argon": "https://ai-guide-418.pages.dev/models/gemini-4-argon/",
+    "typesafe-jev-latest": "https://ai-guide-418.pages.dev/models/jev-decision-model/",
+    "moonshotai-kimi-k3": "https://ai-guide-418.pages.dev/models/kimi-k3/",
+    "anthropic-claude-opus-4-8": "https://ai-guide-418.pages.dev/models/opus-4-8-four-model/",
+    "xiaomi-mimo-v2-5-pro": "https://ai-guide-418.pages.dev/models/xiaomi-mimo/"
+  }
+}

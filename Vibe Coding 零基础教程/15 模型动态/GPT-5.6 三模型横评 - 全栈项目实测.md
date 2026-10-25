@@ -1,10 +1,14 @@
+---
+permalink: /models/gpt-5-6-three-model/
+title: "GPT-5.6 三模型横评"
+---
 # GPT-5.6 三模型横评 - 全栈项目实测
 
 > 三大 AI 编程旗舰模型同场竞技，一把梭开发全栈足球游戏项目
 
 刚刚，OpenAI 正式发布了 GPT-5.6 系列模型，包含 Sol 旗舰、Terra 均衡和 Luna 轻量三个版本。
 
-![](https://pic.yupi.icu/1/image-20260710102644422.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710102644422-c4d30b90fd)
 
 这是 OpenAI 继 GPT-5.5 之后最大的一次模型更新，官方称 Sol 是 **有史以来最强模型**，在多个编程能力测评上超越了 Claude Fable 5！
 
@@ -14,7 +18,7 @@
 
 正好这三个模型在 Cursor 里都能用了，我干脆让它们同时开发同一个项目，用实际的 AI 编程能力来分个高下。
 
-![](https://pic.yupi.icu/1/image-20260710101735638.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710101735638-64b2275bc1)
 
 开始之前，先聊聊这次 GPT-5.6 到底更新了什么。
 
@@ -34,23 +38,23 @@ Sol 的定价跟 Opus 4.8 差不多（输入 5 刀、输出 30 刀），但比 F
 
 跑分方面，GPT-5.6 Sol 在 Terminal-Bench 2.1（终端编程 + Agent 工作流能力）上拿到了 88.8%，Ultra 模式更是达到了 91.9%，把 Fable 5 的 83.4% 和 GPT-5.5 的 83.4% 都甩在了身后。
 
-![](https://pic.yupi.icu/1/image-20260710101910897.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710101910897-43b554c280)
 
 除了模型本身，这次 OpenAI 在产品层面也有大动作，Codex 正式合并到 ChatGPT 里了！
 
-![](https://pic.yupi.icu/1/1783642205423-e6d8b21a-bd10-4ee9-a40e-0bf58b24b25b-20260710113955972.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783642205423-e6d8b21a-bd10-4ee9-a40e-0bf58b24b2-577b3047bb)
 
 在左上角可以切换 Work 和 Codex 两个模式：
 
-![](https://pic.yupi.icu/1/1783643141313-5d69bf30-2618-4b2e-9c8c-11e6d5541280-20260710113956124.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783643141313-5d69bf30-2618-4b2e-9c8c-11e6d55412-94f72d6bf0)
 
 在 Codex 中，可以直接使用 GPT 5.6 全系列模型，自由设置推理强度：
 
-![](https://pic.yupi.icu/1/image-20260710102330452.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710102330452-b36e4d07fd)
 
 另外还新推出了「站点」功能，可以用自然语言描述需求，AI 帮你生成网页应用并直接托管上线，后面带大家玩玩~
 
-![](https://pic.yupi.icu/1/image-20260710105835836.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710105835836-53f12585bb)
 
 模型能力方面，我觉得最值得关注的有 3 点。
 
@@ -70,7 +74,7 @@ Sol 的定价跟 Opus 4.8 差不多（输入 5 刀、输出 30 刀），但比 F
 
 支持显式缓存断点和 30 分钟最低缓存生命周期，缓存命中时输入成本打一折。对于跑长时间 Agent 任务的开发者来说，应该能够大幅节约成本。
 
-![](https://pic.yupi.icu/1/01_GPT-5.6%25E4%25B8%2589%25E5%25A4%25A7%25E8%2583%25BD%25E5%258A%259B%25E4%25BA%25AE%25E7%2582%25B9%25EF%25BC%259AUltra%25E5%25A4%259AAgent%25E3%2580%2581Max%25E6%25B7%25B1%25E5%25BA%25A6%25E6%258E%25A8%25E7%2590%2586%25E3%2580%2581Prompt%25E7%25BC%2593%25E5%25AD%2598_compressed_v2.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/01-gpt-5-6-ultra-agent-max-prompt-compressed-v2-78b3983f7d)
 
 看到这里，你是不是也对 GPT 5.6 充满期待了？
 
@@ -90,13 +94,13 @@ Sol 的定价跟 Opus 4.8 差不多（输入 5 刀、输出 30 刀），但比 F
 
 这样一来，三个模型可以使用完全相同的 Harness 工程环境，包括相同的工具、MCP 和 Skills、同样的上下文。我还在提示词里运用了 Loop Engineering 的思想，要求模型写完就自测、发现 Bug 就修复、循环迭代直到满意为止。
 
-![](https://pic.yupi.icu/1/image-20260710103421135.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710103421135-147399599a)
 
 这次我让 AI 开发的是一个「足球对战网页游戏」，名字叫 **2066 决战世界杯**。
 
 玩家操控一支 5 人球队和电脑人机对战，包含 10 个功能需求：物理引擎、AI 对手、比赛系统、用户排行榜、战绩统计面板等等。
 
-![](https://pic.yupi.icu/1/image-20260710110116017.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710110116017-f7619a9c0d)
 
 为什么选择足球游戏作为测试案例呢？
 
@@ -119,11 +123,11 @@ Sol 的定价跟 Opus 4.8 差不多（输入 5 刀、输出 30 刀），但比 F
 
 GPT-5.6 Sol 和 Grok 4.5 则是想了想就直接开干了，边写边调。
 
-![](https://pic.yupi.icu/1/image-20260710105402348.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710105402348-15531c3bd1)
 
 在提示词的引导下，三个模型都使用了 Cursor 内置的浏览器来自主测试效果：
 
-![](https://pic.yupi.icu/1/image-20260710105513163.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710105513163-80d433d251)
 
 最后，三个模型全部完成了 10 个功能的开发，但速度差异非常明显：
 
@@ -151,7 +155,7 @@ GPT-5.6 Sol 最快交卷，而且只修了 2 轮 Bug 就跑通了。Fable 5 花�
 
 凭借着对自己手速的自信，我选了中等难度。
 
-![](https://pic.yupi.icu/1/1783646727877-176ed69a-3126-4908-8886-6fdfdddacee5.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783646727877-176ed69a-3126-4908-8886-6fdfdddace-1352ed7f14)
 
 进入到比赛界面，UI 风格还可以，球场基本还原了标准布局，虽然少了两个罚球区弧线，但不影响游戏。
 
@@ -161,35 +165,35 @@ GPT-5.6 Sol 最快交卷，而且只修了 2 轮 Bug 就跑通了。Fable 5 花�
 
 好家伙，你俩打乒乓球呢？
 
-![](https://pic.yupi.icu/1/1783647330206-bb64786d-95d9-41e5-9d53-4fb42ffdd9da.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647330206-bb64786d-95d9-41e5-9d53-4fb42ffdd9-48a5b347e1)
 
 而且 AI 不会主动组织进攻，基本就是追着球跑。更搞笑的是下面这个名场面，两个自家的红方球员扭打在一团，何意味？
 
-![](https://pic.yupi.icu/1/1783646934441-fabe029a-30bc-4f09-ad66-6765a9988805.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783646934441-fabe029a-30bc-4f09-ad66-6765a99888-fcb424f9e2)
 
 我尽了自己的全力，打完了一整场中等难度，结果是 0 比 0 收场，人机的防守真是密不透风。
 
-![](https://pic.yupi.icu/1/1783646990995-cc740553-5e74-4a26-9155-b94f1875b3d2.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783646990995-cc740553-5e74-4a26-9155-b94f1875b3-390de64cbe)
 
 我又试了一把简单难度。这次人机的水平明显下降了，我方前锋「李佛脚」单枪匹马直接破门，拿下一分！
 
-![](https://pic.yupi.icu/1/1783647469882-4dc1950a-62b4-4bcf-b65a-e212c8c49db6.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647469882-4dc1950a-62b4-4bcf-b65a-e212c8c49d-c62563ac54)
 
 比赛结束，只有登录才能统计成绩。登录页面的风格挺不错，虽然一眼 GPT，但还是有未来感的。
 
-![](https://pic.yupi.icu/1/1783647079978-8b36af2c-829e-439d-8bba-db2c42fa6017.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647079978-8b36af2c-829e-439d-8bba-db2c42fa60-0de42353ee)
 
 战绩统计面板做得也挺完整，胜率、难度分布、近场走势都有：
 
-![](https://pic.yupi.icu/1/1783647118172-7dc754c2-cf81-4927-b859-e93a298e6e46.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647118172-7dc754c2-cf81-4927-b859-e93a298e6e-b3f447208e)
 
 排行榜页面没什么好说的，中规中矩：
 
-![](https://pic.yupi.icu/1/1783647136681-5cdb9ef0-f629-4844-b8ec-777f8af43454.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647136681-5cdb9ef0-f629-4844-b8ec-777f8af434-00b77f3843)
 
 不过移动端就拉胯了，足球场被严重挤压，完全没法玩！
 
-![](https://pic.yupi.icu/1/1783649199142-be627e8b-a1e7-4d8b-8ada-8a18c600575f.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783649199142-be627e8b-a1e7-4d8b-8ada-8a18c60057-74374d597e)
 
 
 
@@ -197,39 +201,39 @@ GPT-5.6 Sol 最快交卷，而且只修了 2 轮 Bug 就跑通了。Fable 5 花�
 
 Grok 4.5 开发的网站上来先要登录，而且登录界面的配色有点儿魔幻，很难让人联想到这是一个足球游戏。
 
-![](https://pic.yupi.icu/1/1783647544967-ad6015f7-dcdc-4a0f-945e-ae93c3e27b8b.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647544967-ad6015f7-dcdc-4a0f-945e-ae93c3e27b-f2dcad102c)
 
 进入赛前设置页面，我方队名「银河战舰」、对手队名 「星际联队」，这名字的确很符合 SpaceX 的模型了。
 
 右侧直接就是排行榜，没见过这么会偷懒的……
 
-![](https://pic.yupi.icu/1/1783647588899-c135c1ab-5362-419a-bf26-36c8c5307450.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647588899-c135c1ab-5362-419a-bf26-36c8c53074-b1d3f92e5b)
 
 进入比赛之后，这个球场的图形…… 什么成分我就不多说了吧？
 
 中等难度下，我方球员笨得可怕。你管下面这位叫守门员？
 
-![](https://pic.yupi.icu/1/1783648020795-d1809bda-6c3c-4e36-babf-a3f6e9e494e1.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648020795-d1809bda-6c3c-4e36-babf-a3f6e9e494-32b9e51c9d)
 
 果然没过多久，我方就被破门了。TNND 我的几个队友全体挂机，只留下守门员和对手赵云单挑。
 
-![](https://pic.yupi.icu/1/1783648076215-344330eb-541c-4c4c-bef2-b94a0b24c436.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648076215-344330eb-541c-4c4c-bef2-b94a0b24c4-57e6a0000d)
 
 游戏的换人逻辑也很不顺畅，经常给我换到离球最远的那个人身上，点好几次才能切换到我想控制的球员。
 
 最后被踢了个 4 比 0，而且一直是被对方同一个人反复破门。这将是我李佛脚职业生涯上的耻辱柱 &%￥*……
 
-![](https://pic.yupi.icu/1/1783648162915-172f786b-a771-4d8d-8f50-14db232bb236.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648162915-172f786b-a771-4d8d-8f50-14db232bb2-94978427ce)
 
-![](https://pic.yupi.icu/1/1783647838129-52fd0932-b7f5-42d8-ba0f-08f2731735b6.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647838129-52fd0932-b7f5-42d8-ba0f-08f2731735-0ced273151)
 
 赛后的战绩统计做得还挺完整，但就是太偷懒了，谁家把赛前设置和赛后统计放在一个页面啊？
 
-![](https://pic.yupi.icu/1/1783647910762-5718a633-f2b9-4d21-bec8-db3b50121c1b.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783647910762-5718a633-f2b9-4d21-bec8-db3b50121c-5c6961c42e)
 
 再看看移动端，足球场能够完整展示，但空间太小，布局一般：
 
-![](https://pic.yupi.icu/1/1783649238383-14287cf2-db7c-46e8-a9f0-c29191bacb88.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783649238383-14287cf2-db7c-46e8-a9f0-c29191bacb-5770fca76c)
 
 
 
@@ -237,17 +241,17 @@ Grok 4.5 开发的网站上来先要登录，而且登录界面的配色有点�
 
 Claude Fable 5 开发的网站同样需要先登录才能玩，登录页面的整体风格中规中矩吧。
 
-![](https://pic.yupi.icu/1/1783648268430-11dab7ed-5cbc-499f-8a8c-c9a7e70562db.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648268430-11dab7ed-5cbc-499f-8a8c-c9a7e70562-c3bc805b18)
 
 来到赛前准备界面，这 Emoji 用的让我有点儿难受了，界面也太刻板，没什么游戏的感觉：
 
-![](https://pic.yupi.icu/1/1783648312035-16c106ec-7cdd-4e0b-b03c-d30d1336d695.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648312035-16c106ec-7cdd-4e0b-b03c-d30d1336d6-c429d42f0c)
 
 进入比赛，这个球员的造型给我蚌埠住了…… 小只因 🐦？
 
 不过球场的布局倒是三个模型里最标准的，中圈、禁区、罚球区弧线都有，这点给好评。
 
-![](https://pic.yupi.icu/1/1783648663747-6d91fbbc-aa30-4e70-943d-ff0a9ba2c562.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648663747-6d91fbbc-aa30-4e70-943d-ff0a9ba2c5-dd062d9797)
 
 结果没想到，整个游戏体验极差！
 
@@ -255,25 +259,25 @@ Claude Fable 5 开发的网站同样需要先登录才能玩，登录页面的�
 
 比如你看现在，球在对方球员的前面：
 
-![](https://pic.yupi.icu/1/1783648857986-4d1edca9-1496-494c-80b1-096690b34bc4.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648857986-4d1edca9-1496-494c-80b1-096690b34b-78934a93fa)
 
 一转眼，球直接瞬移到对方球员身后了！
 
 不是哥们？挑球也没你这么挑的啊？
 
-![](https://pic.yupi.icu/1/1783648879116-db67afeb-0997-4cd8-94e8-987325fcad01.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648879116-db67afeb-0997-4cd8-94e8-987325fcad-c62c308b11)
 
 我直接就是一个放弃比赛，给我玩恶心了…… 你管这叫 Claude Fable 5？
 
-![](https://pic.yupi.icu/1/1783648437353-bcb6da92-14ac-45f3-a44a-e0f9422d8d47.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648437353-bcb6da92-14ac-45f3-a44a-e0f9422d8d-092f314939)
 
 个人战绩页面也是中规中矩，让我怀疑模型是不是降智到 Opus 4.8 了：
 
-![](https://pic.yupi.icu/1/1783648455388-51a72215-1fa2-46fb-904a-0710b92c095f.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783648455388-51a72215-1fa2-46fb-904a-0710b92c09-89599d7d64)
 
 最后看看移动端，倒是三个里面体验最好的，球场完整显示、布局合理，有虚拟摇杆和操作按钮：
 
-![](https://pic.yupi.icu/1/1783649281625-fb60121f-743b-4345-8b7b-e4ab9d58b6ca.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/1783649281625-fb60121f-743b-4345-8b7b-e4ab9d58b6-c0832a5f1a)
 
 
 
@@ -293,15 +297,15 @@ Claude Fable 5 开发的网站同样需要先登录才能玩，登录页面的�
 
 GPT-5.6 Sol 只用 683 行代码就搞定了 10 个功能，代码密度极高。
 
-![](https://pic.yupi.icu/1/image-20260710111618379.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710111618379-fa4627dff2)
 
 Grok 4.5 拆了 8 个文件、2622 行，模块化做的比较好。
 
-![](https://pic.yupi.icu/1/image-20260710111641087.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710111641087-68e463bf30)
 
 Fable 5 代码量排在中间，1844 行，但有个问题，核心游戏逻辑全堆在一个 33KB 的 `game.js` 里，可维护性比较差。
 
-![](https://pic.yupi.icu/1/image-20260710112615563.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260710112615563-d40c2efae6)
 
 人机对手的实现上，三个模型都用了规则驱动的状态机方案，按球员角色（门将 / 后卫 / 中场 / 前锋）分配不同行为，通过难度参数来区分三档。
 
@@ -347,7 +351,7 @@ Sol 只修了 2 轮 Bug 就跑通了，Fable 5 虽然花了 20 分钟，但物�
 
 不过这样也好，说明程序员暂时还不用担心被 AI 抢走游戏开发的饭碗。
 
-![](https://pic.yupi.icu/1/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8E%8B%E5%8A%9B%E4%B8%8D%E5%A4%A7%E8%A1%A8%E6%83%85%E5%8C%85.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/img-dd4b661e32)
 
 通过这次横评可以看到，不同模型在 AI 编程方面各有各的特点，最贵的不一定最好，最快的也不一定最全面。还是得按自己的实际需求来选模型，而不是盲目追新。
 

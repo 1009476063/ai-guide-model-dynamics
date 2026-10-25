@@ -1,3 +1,7 @@
+---
+permalink: /models/jev-decision-model/
+title: "Jev 决策模型实测"
+---
 # Jev 决策模型实测 - 从入门到实战
 
 > 一个不能聊天的 AI 模型，凭什么火了？
@@ -12,11 +16,11 @@
 
 它叫 Jev，由前 OpenAI 研究员 Diogo Almeida 创办的 TypeSafe AI 发布，这哥们是 ChatGPT 的共同发明人之一！
 
-![](https://pic.yupi.icu/1/image-20260921093023635.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921093023635-a4dcfefc71)
 
 我刚看到的反应是：一个不说人话的 AI，能有什么用？又是噱头吧？
 
-![](https://pic.yupi.icu/1/image-20260921135348210.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921135348210-a79755a7d2)
 
 了解之后发现，还真有点东西！
 
@@ -48,7 +52,7 @@ Jev 就完全不一样了。你问它「这封邮件紧急吗」，它就直接�
 
 可以说，没有任何 AI 比它更直接、更不绕弯子。
 
-![](https://pic.yupi.icu/1/01_%E4%BC%A0%E7%BB%9FLLM_vs_Jev%E5%AF%B9%E6%AF%94%E5%9B%BE%EF%BC%9A%E5%90%8C%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E3%80%81%E9%80%9F%E5%BA%A6%E3%80%81%E4%BB%B7%E6%A0%BC%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/01-llm-vs-jev-compressed-v1-656a15fcff)
 
 TypeSafe AI 管这种模型叫 **System One Model（系统一模型）**，灵感来自诺贝尔奖得主 Daniel Kahneman 的《思考，快与慢》。系统一是人类大脑里负责快速直觉判断的部分，比如你一眼就能看出「这个人在生气」；系统二是负责深度推理的，比如「算一下 17 × 24」。
 
@@ -197,7 +201,7 @@ Score 1.04 表示介于第 1 级（不满但礼貌）和第 2 级（非常愤怒
 
 看到这里，可能有接触过 AI 应用开发的朋友会想：我之前在提示词里引导 AI 输出 JSON，或者用大模型自带的结构化输出功能，也能让 AI 返回固定格式的结果啊…… Jev 跟它们有什么区别？
 
-![](https://pic.yupi.icu/1/image-20260921122527888.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921122527888-47dd9529de)
 
 你别说，区别还真挺大的！
 
@@ -205,13 +209,13 @@ Score 1.04 表示介于第 1 级（不满但礼貌）和第 2 级（非常愤怒
 
 Jev 的做法完全不一样，它用的是 **并行采样**，不像传统 LLM 那样逐字生成文本，而是直接在预定义好的选项上输出概率分布。也就是说，前面提到的 3 种问题可以在一次请求里同时问，问 1 个和问 10 个问题的响应时间几乎没差别。
 
-![](https://pic.yupi.icu/1/02_%E5%B9%B6%E8%A1%8C%E9%87%87%E6%A0%B7_vs_%E9%80%90%E5%AD%97%E7%94%9F%E6%88%90%E5%AF%B9%E6%AF%94%E5%9B%BE%EF%BC%9AJev%E5%90%8C%E6%97%B6%E8%BE%93%E5%87%BA%E6%89%80%E6%9C%89%E7%AD%94%E6%A1%88_vs_LLM%E4%B8%80%E4%B8%AAtoken%E4%B8%80%E4%B8%AAtoke_compressed_v1.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/02-vs-jev-vs-llm-token-toke-compressed-v1-30bca55137)
 
 此外，Jev 的训练方式也跟传统模型不同。传统 LLM 用 RLHF 人类反馈强化学习，优化目标是让回答读起来通顺，让人类满意；推理模型用 RLVR 可验证奖励强化学习，优化目标是让那些有标准答案的问题做对，比如数学证明能不能验证通过、生成的代码能不能编译运行。
 
 而 Jev 用的是 TypeSafe 自研的 **RLCD 校准决策强化学习**，优化目标是让模型「说到做到」，如果 AI 说有 90% 的把握，那在大量预测中这类判断确实有约 90% 是对的。
 
-![](https://pic.yupi.icu/1/03_RLHF_vs_RLVR_vs_RLCD%E4%B8%89%E7%A7%8D%E8%AE%AD%E7%BB%83%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94%E5%9B%BE_compressed_v1.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/03-rlhf-vs-rlvr-vs-rlcd-compressed-v1-c426fb9ac1)
 
 理解了这些原理，前面表格里那些夸张的数据就好解释了：
 
@@ -233,7 +237,7 @@ TypeSafe 官方建议把 Jev 当成一个「智能的 if 语句」，所有需�
 
 比如客服系统收到用户消息，一次性判断该分给哪个部门、是否紧急、情绪如何。社区里有人拿 Jev 给 1018 篇论文做分类，分类部分只花了 0.08 刀。
 
-![](https://pic.yupi.icu/1/image-20260921135926221.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921135926221-e999a75199)
 
 2）AI Agent 的决策中间层
 
@@ -241,7 +245,7 @@ TypeSafe 官方建议把 Jev 当成一个「智能的 if 语句」，所有需�
 
 有人用这个思路做了 [浏览器自动化 Agent](https://github.com/browser-use/jev-ultrafast)，7.1 秒就在 Google Flights 上搜索完一次航班，成本只有 0.0039 刀。
 
-![](https://pic.yupi.icu/1/image-20260921140103137.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921140103137-a072c9694d)
 
 3）内容审核和风控
 
@@ -251,13 +255,13 @@ TypeSafe 官方建议把 Jev 当成一个「智能的 if 语句」，所有需�
 
 比如 LLM 生成了一段回答，用 Jev 快速检查有没有跑题、质量打几分，用便宜的 AI 检查贵的 AI。社区里有人做了一个 [多阶段代码审查工具](https://github.com/devagrawal09/jev-review)，用 Jev 先做风险评估再逐文件打分。
 
-![](https://pic.yupi.icu/1/image-20260921140215440.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921140215440-f0cf37a5bf)
 
 5）实时游戏决策
 
 有人用 Jev 玩地铁跑酷游戏，操作速度超过人类；有人用 Jev 控制超级马里奥，甚至还有人打通了《星际争霸》第一关！
 
-![](https://pic.yupi.icu/1/image-20260921140406004.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921140406004-30096589cd)
 
 这类对响应速度要求极高的场景，以前用传统的 LLM 根本不可能做到。
 
@@ -275,7 +279,7 @@ TypeSafe 官方建议把 Jev 当成一个「智能的 if 语句」，所有需�
 
 Jev 现在已经正式开放注册了，直接用邮箱在 [TypeSafe 官网](https://typesafe.ai/) 注册登录就行。
 
-![](https://pic.yupi.icu/1/image-20260921140913041.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921140913041-15b495a4f7)
 
 注册之后，最简单的使用方式就是直接在官方 Playground 里体验，也可以通过 API 和 SDK 接入到自己的项目里，或者通过 Vercel、Cloudflare 这些第三方平台来调用。
 
@@ -285,7 +289,7 @@ Jev 现在已经正式开放注册了，直接用邮箱在 [TypeSafe 官网](htt
 
 打开 [官方的在线 Playground](https://console.typesafe.ai/playground)，左边填写提供给 AI 的上下文和想让 AI 分析的问题，点击运行就能在右侧看到结果。
 
-![](https://pic.yupi.icu/1/image-20260921104040020.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921104040020-532616baf5)
 
 
 
@@ -293,11 +297,11 @@ Jev 现在已经正式开放注册了，直接用邮箱在 [TypeSafe 官网](htt
 
 登录之后，可以到 [TypeSafe 的控制台](https://console.typesafe.ai/keys) 中创建 API Key。
 
-![](https://pic.yupi.icu/1/image-20260921111110347.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921111110347-c898c02e10)
 
 TypeSafe 提供了 Python SDK 和 JavaScript SDK，方便开发者在自己的项目里直接调用 Jev，也可以通过 HTTP API 调用。[官方文档的 Quick Start 页面](https://docs.typesafe.ai/introduction/quickstart) 有完整的示例代码。
 
-![](https://pic.yupi.icu/1/image-20260921111451815.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921111451815-495a1875b3)
 
 以 Python 为例，安装 SDK 之后几行代码就能跑：
 
@@ -338,15 +342,15 @@ print(response.answers["is_urgent"].noul)      # 0.95
 
 以 Vercel 为例，它的 AI SDK 专门新增了一个 `experimental_evaluate` 接口来对接 Jev 这类决策模型，详细教程可以查看 [Vercel 官方文档](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk)。
 
-![](https://pic.yupi.icu/1/image-20260921123630614.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921123630614-0d7654881f)
 
 我还用 AI 接入 Vercel AI Gateway 做了一个 **中文版的 Jev 调试广场**，可以直接在网页上体验 Jev 的三种回复方式。
 
-![](https://pic.yupi.icu/1/image-20260921103636350.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921103636350-25ec2b1525)
 
 点击「运行」之后，就能直接看到 Jev 返回的决策结果和原始 JSON 数据。
 
-![](https://pic.yupi.icu/1/image-20260921103749146.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921103749146-1c295a6dce)
 
 
 
@@ -358,11 +362,11 @@ print(response.answers["is_urgent"].noul)      # 0.95
 
 TypeSafe 官方提供了一个通用的 Skills 技能包，简单理解就是一份说明书，告诉 AI 编程工具 Jev 是什么、怎么调用、参数怎么传。只要安装了这个技能包，所有主流的 AI 编程工具都能帮你调用 Jev。
 
-![](https://pic.yupi.icu/1/image-20260921123942507.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921123942507-513e2b78d2)
 
 安装方法非常简单，官方提供了一段 [现成的提示词](https://docs.typesafe.ai/introduction/quickstart)，可以让 AI 帮你把技能安装到你用的 AI 工具里。
 
-![](https://pic.yupi.icu/1/image-20260921095851136.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921095851136-d1f54fb466)
 
 不过官方的提示词默认只在当前项目下安装。我把提示词翻译成中文并改为了全局安装的版本，这样所有项目都能用：
 
@@ -372,19 +376,19 @@ TypeSafe 官方提供了一个通用的 Skills 技能包，简单理解就是一
 
 比如我在 Codex 中执行这段提示词，它会根据你用的 AI 工具，执行对应的命令把技能文件从 GitHub 仓库拉取下来。
 
-![](https://pic.yupi.icu/1/image-20260921112456632.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921112456632-4c0f6d7c8d)
 
 安装完成之后，还需要在环境变量里配置好 TypeSafe 的 API Key，直接让 AI 帮你配置就好：
 
-![](https://pic.yupi.icu/1/image-20260921113232438.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921113232438-0706213603)
 
 配好之后，你就可以在 AI 编程工具里直接使用斜杠命令 `/typesafe-ai` 来触发技能，AI 会自动帮你调用 Jev 来完成判断和决策。
 
-![](https://pic.yupi.icu/1/image-20260921113521554.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921113521554-0662352b13)
 
 你也可以在对话中直接告诉 AI「用 Jev 来帮我做判断」，AI 同样会自动加载 TypeSafe 技能并调用 Jev 的接口：
 
-![](https://pic.yupi.icu/1/image-20260921113909685.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921113909685-6a34164c32)
 
 如果你还不太了解 Skills 技能包，可以阅读本教程编程工具板块「工具实战」目录中的《Agent Skills：通用 AI 技能库》。
 
@@ -402,11 +406,11 @@ TypeSafe 官方提供了一个通用的 Skills 技能包，简单理解就是一
 
 数字华容道是一个经典的滑块拼图游戏，4 × 4 的棋盘上有 15 个数字方块和 1 个空位，目标是把所有数字按顺序排列好。每一步都需要判断「空位应该往哪个方向移动」，这对决策能力的要求很高。
 
-![](https://pic.yupi.icu/1/image-20260921150806775.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921150806775-8dfa12b489)
 
 开始测试，左边是 Jev，右边是 DeepSeek V4.1 Flash，两边同时开始，实时展示每一步的决策时间、累计消耗的 token 数和价格。
 
-![](https://pic.yupi.icu/1/image-20260921150739128.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921150739128-36234a3142)
 
 最终，Jev 在完成速度上遥遥领先 DeepSeek V4.1 Flash，而且输入 token 和累计价格也更低。
 
@@ -418,11 +422,11 @@ TypeSafe 官方提供了一个通用的 Skills 技能包，简单理解就是一
 
 我模拟了 1000 封不同内容的邮件，让 Jev 和 DeepSeek V4.1 Flash 分别对每封邮件做优先级分类、紧急程度判断和部门路由，两边拿到的邮件列表完全一样。
 
-![](https://pic.yupi.icu/1/image-20260921151723355.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921151723355-e8a2cbf08c)
 
 最终结果，Jev 用了 15.6 秒处理完 1000 封邮件，平均每秒处理 64 封，累计花费 0.0177 刀；而 DeepSeek V4.1 Flash 用了 48.9 秒，平均每秒 20 封，累计花费 0.0207 刀。Jev 在速度上快了接近 2 倍，价格也略低一些。
 
-![](https://pic.yupi.icu/1/image-20260921134905000.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921134905000-fca88f97f0)
 
 
 
@@ -444,11 +448,11 @@ TypeSafe 官方提供了一个通用的 Skills 技能包，简单理解就是一
 
 Codex 加载了 TypeSafe 技能之后，会自动分析页面结构，识别出方块的位置和图案，然后调用 Jev 来做每一步「选哪对方块消除」的决策，最后操作页面完成消除。
 
-![](https://pic.yupi.icu/1/image-20260921130120786.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921130120786-87d4623efd)
 
 虽然 AI 顺利通关了游戏，但是执行速度没有达到我的预期。快的时候可以 2 秒消除 1 个，但经常消除几个之后会卡一会儿，总共花了 5 分钟左右才完成整局游戏。
 
-![](https://pic.yupi.icu/1/image-20260921130410692.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921130410692-91ddb74dd8)
 
 Jev 的决策速度确实很快，问题出在「看」这个环节。Jev 只能处理文本和 JSON 数据，没办法直接「看到」网页上方块的位置和图案。这次测试我用的是本地的连连看网页，Codex 可以直接解析到原始的 HTML 和 DOM 结构，所以还能跑起来。如果换成用 Canvas 渲染的网页游戏，DOM 里获取不到足够的信息，效果会更差。
 
@@ -472,13 +476,13 @@ Jev 的决策速度确实很快，问题出在「看」这个环节。Jev 只能
 不改动原始文章，只是最后输出一份报告。
 ```
 
-![](https://pic.yupi.icu/1/image-20260921144748702.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921144748702-c37a6b53fa)
 
 Codex 会先盘点文章范围、数量和篇幅，再按上下文限制设计可靠的批处理，批量调用 Jev 模型来判断文章的标签。
 
 最终只用了几分钟，就完成了 697 篇长文章的标签分类！这个速度真的非常快了。
 
-![](https://pic.yupi.icu/1/image-20260921144648609.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921144648609-7d7e77f97c)
 
 这类批量分类打标签的场景特别适合 Jev，因为每篇文章的判断逻辑是一样的，只是输入内容不同，可以批量并行处理。而且分类结果是结构化的，拿到之后可以直接用来生成目录、做筛选功能。
 
@@ -490,7 +494,7 @@ Codex 会先盘点文章范围、数量和篇幅，再按上下文限制设计�
 
 如果把 Jev 作为决策模型直接接入到自己的应用里（比如客服分类、内容审核、数据打标签），体验是非常好的，速度快、价格低、结果准确。做了上面这么多任务，总共也才花了不到 2 块钱。
 
-![](https://pic.yupi.icu/1/image-20260921145130950.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260921145130950-49e14d78df)
 
 但如果是通过 AI 工具来间接使用 Jev，目前的体验还有不少提升空间，主要瓶颈在于 AI 工具对网页内容的感知能力还不够强，很多场景下没办法给 Jev 提供足够准确的输入数据。
 

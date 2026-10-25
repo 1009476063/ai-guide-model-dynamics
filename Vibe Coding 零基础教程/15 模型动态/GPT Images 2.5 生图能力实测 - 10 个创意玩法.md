@@ -1,3 +1,7 @@
+---
+permalink: /models/gpt-images-2-5/
+title: "GPT Images 2.5 生图能力实测"
+---
 # GPT Images 2.5 生图能力实测 - 10 个创意玩法
 
 > 手绘草图直接成图、指哪改哪，AI 生图的创作方式变了
@@ -10,13 +14,13 @@
 
 2026 年 9 月，OpenAI 又放了个大招，ChatGPT Images 2.5 正式发布！
 
-![](https://pic.yupi.icu/1/ScreenShot_2026-09-09_101528_180.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/screenshot-2026-09-09-101528-180-4b0a9f535e)
 
 这次升级不仅提高了生图的质量、提升了多达 50% 的生成速度、提升了多轮编辑的一致性，更关键的是 **改变了整个 AI 生图的创作方式**。
 
 新增了 Sketch 草图参考功能，可以直接在 ChatGPT 里画草稿让 AI 帮你生成完整图片。还支持了在图片上放 Comment 标注来精准修改局部细节。此外，还新增了 Templates 创作模板、Prompt 共享、透明背景生成能力。
 
-![官方提供的成品图](https://pic.yupi.icu/1/sci-fi-surrealism.png)
+![官方提供的成品图](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/sci-fi-surrealism-b7a84e8819)
 
 现在打开 ChatGPT 生图，默认就是 Images 2.5 了，所有用户（包括免费版）都已经可以直接体验，网页端、桌面端和手机 App 都支持。
 
@@ -24,7 +28,7 @@
 
 我第一时间把这些新能力全测了一遍，整理出 10 个最有意思的玩法分享给大家，每个都附上了完整提示词和操作流程，傻子可懂。
 
-![](https://pic.yupi.icu/1/%25E6%2589%258B%25E7%25BB%2598%25E5%25A5%25B3%25E7%2594%259F%25E6%258B%25BF%25E7%259D%2580%25E6%259D%25AF%25E5%25AD%2590.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/img-5e9c55e63c)
 
 ⭐️ 本文对应视频版，操作演示更直观：https://bilibili.com/video/BV1qqYt64E7C
 
@@ -36,7 +40,7 @@ Sketch 是这次最让我兴奋的新功能。以前想让 AI 生成特定构图
 
 重点是，你完全不需要有任何绘画基础，画得越「灵魂」越有反差效果。
 
-![](https://pic.yupi.icu/1/image-20260909110346499.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909110346499-7bc5d3a2d5)
 
 
 
@@ -46,7 +50,7 @@ Sketch 是这次最让我兴奋的新功能。以前想让 AI 生成特定构图
 
 现在有了 Sketch，我可以先用草图画出封面的大致布局，比如标题放在哪、文字是什么、人物在什么位置、背景有哪些元素。
 
-![](https://pic.yupi.icu/1/image-20260909105708849.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909105708849-c6d1bbaa7e)
 
 然后把我的真人照片也上传作为参考，AI 就能理解我要的是什么效果。
 
@@ -56,11 +60,11 @@ Sketch 是这次最让我兴奋的新功能。以前想让 AI 生成特定构图
 制作 16 比 9 的封面图，画面为写实风格，标题醒目，构图和人物参考我提供的图片
 ```
 
-![](https://pic.yupi.icu/1/image-20260909105950491.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909105950491-b548918e98)
 
 不到一分钟，AI 就生成了封面。整体构图完全按照我画的草图来的，人物位置、标题区域全都对上了：
 
-![](https://pic.yupi.icu/1/image-20260909110136098.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909110136098-8eed76853f)
 
 这个流程比纯文字描述高效太多了。以前我得花好几轮对话才能让 AI 理解我想要的构图，现在花几十秒画个草稿就搞定了。以后做封面图可以省下不少时间。
 
@@ -70,7 +74,7 @@ Sketch 是这次最让我兴奋的新功能。以前想让 AI 生成特定构图
 
 Sketch 的另一个实用场景是室内设计。你不需要会用任何 3D 建模软件，只要能画出房间的大致布局，比如沙发在哪、桌子在哪、窗户在哪个方向，AI 就能帮你生成一张像模像样的室内设计效果图。
 
-![](https://pic.yupi.icu/1/image-20260909110552782.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909110552782-14d4c06289)
 
 提示词：
 
@@ -80,7 +84,7 @@ Sketch 的另一个实用场景是室内设计。你不需要会用任何 3D 建
 
 如果你正在装修或者搞出租屋改造，完全可以先用这个功能快速出效果图，看看自己的想法实现出来是什么感觉，满意了再动手。
 
-![](https://pic.yupi.icu/1/image-20260909110839099.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909110839099-a08d0d5a55)
 
 
 
@@ -90,7 +94,7 @@ Sketch 的另一个实用场景是室内设计。你不需要会用任何 3D 建
 
 来感受一下我的大作，你能看出来我画的是什么故事么？
 
-![](https://pic.yupi.icu/1/image-20260909111608540.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909111608540-0310a0c8f2)
 
 然后我把自己 cosplay「老头程序员」的照片也上传了上去，让 AI 参考我的形象来画主角。
 
@@ -100,11 +104,11 @@ Sketch 的另一个实用场景是室内设计。你不需要会用任何 3D 建
 根据四格漫画分镜草图，生成一页完整的彩色漫画。风格是日系轻松搞笑风，主角是一个程序员，参考我上传的照片中的人物形象。
 ```
 
-![](https://pic.yupi.icu/1/image-20260909112221172.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909112221172-7a9c538704)
 
 来看下成品效果，不错吧！
 
-![](https://pic.yupi.icu/1/ChatGPT%20Image%202026%E5%B9%B49%E6%9C%889%E6%97%A5%2011_21_33.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/chatgpt-image-2026-9-9-11-21-33-fdfb182165)
 
 以前想做个漫画要么自己学画画，要么请人画，成本都不低。现在有了 Sketch 加持，别说做个草图了，可发布的成品大作都能给你搞定。
 
@@ -128,11 +132,11 @@ Comment 是这次另一个很实用的新功能。
 生成一张编程导航（codefather.cn）的宣传海报：深蓝色科技感背景，中央大标题「编程导航」，副标题「从学编程到做项目到找工作，一站搞定」，下方展示三个核心卖点图标（学习路线、实战项目、面试刷题），底部放网址
 ```
 
-![](https://pic.yupi.icu/1/image-20260909115348882.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909115348882-4e2801b993)
 
 生成之后，点击图片进入编辑模式，点击上方工具栏上的「评论」按钮。
 
-![](https://pic.yupi.icu/1/image-20260909115506938.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909115506938-6a86c29bdb)
 
 我在图上添加了 3 个 Comment：
 
@@ -140,11 +144,11 @@ Comment 是这次另一个很实用的新功能。
 2. 副标题标注「改为：近 30 套项目教程 + 万道面试真题」
 3. 背景标注「加一些代码粒子飘落的视觉效果」
 
-![](https://pic.yupi.icu/1/image-20260909115606466.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909115606466-4aa7d6a2c4)
 
 标注完成后，点击发送评论，可以看到所有的改动都精准生效了：
 
-![](https://pic.yupi.icu/1/image-20260909115800131.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909115800131-3f61b8cbf5)
 
 以前只能跟 AI 对话，通过文字描述要修改的内容，AI 经常搞错位置。现在直接点击图片的某个位置添加具体的改动，准确率高了太多。
 
@@ -162,19 +166,19 @@ Comment 是这次另一个很实用的新功能。
 生成一张宇智波佐助的动漫风格半身像，黑色头发，穿着经典的鹰小队白色开襟上衣，双眼为永恒万花筒写轮眼（六芒星图案，红色瞳孔），表情冷峻，背景为暗色调
 ```
 
-![](https://pic.yupi.icu/1/image-20260909120140819.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909120140819-b6f597b5e3)
 
 生成之后，我在佐助的左眼上精准添加了一个 Comment 标注「把左眼的万花筒写轮眼改为轮回眼」。
 
 来看下效果：
 
-![](https://pic.yupi.icu/1/image-20260909120352798.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909120352798-f08a58db20)
 
 卧槽，真牛啊！
 
 眼睛在整张图里就那么一小块区域，AI 做到了只修改瞳孔图案和颜色，佐助的发型、表情、衣服、背景全都纹丝不动，这个精准度真的能用在实际创作中了。
 
-![](https://pic.yupi.icu/1/image-20260909120446838.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909120446838-31e7daae3d)
 
 再见 PS，真的可以卸载了！
 
@@ -184,7 +188,7 @@ Comment 是这次另一个很实用的新功能。
 
 Templates 是给不想写提示词的人准备的功能。ChatGPT 内置了一批高频创作模板，比如 Poster 海报、Merch 周边、Product Photo 商品图、Logo 等等。
 
-![](https://pic.yupi.icu/1/image-20260909120707903.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909120707903-622ffd00f8)
 
 选一个模板，按提示填写信息和风格偏好，就能生成对应的图片，省去了从零构思提示词的过程。
 
@@ -196,15 +200,15 @@ Templates 是给不想写提示词的人准备的功能。ChatGPT 内置了一�
 
 选择 Product Photo 模板，然后上传一张图片（比如鱼皮的光头小企鹅盆栽），点击发送：
 
-![](https://pic.yupi.icu/1/image-20260909120848057.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909120848057-3987542add)
 
 AI 会询问你一些问题，比如产品照的用途、摄影风格、背景和灯光等等：
 
-![](https://pic.yupi.icu/1/image-20260909120921956.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909120921956-9a52eb4250)
 
 看看效果，还不错吧，很有生活气息。感觉哪天我的头像可以更新一波了~
 
-![](https://pic.yupi.icu/1/image-20260909121351031.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909121351031-5f94bbdc51)
 
 对于做电商、做小红书带货的朋友来说，这个功能太实用了。以前拍一张像样的产品图要么请摄影师，要么自己搭灯光布景折腾半天。现在手机随手拍一张，选个模板就能出一张可以直接上架的商品图。
 
@@ -235,23 +239,23 @@ ChatGPT Images 2.5 的多轮编辑一致性是一个重要升级。以前用 Ima
 第 5 轮：换成乐高积木风格
 ```
 
-![](https://pic.yupi.icu/1/image-20260909121630922.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909121630922-be4ab89de6)
 
 等 AI 生成完所有图片后，我再让 AI 把原图和生成的所有图片按顺序拼接成一张图，便于我对比效果：
 
-![](https://pic.yupi.icu/1/image-20260909122720252.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909122720252-3e9eec4ed4)
 
 显然 5 轮下来，人物是始终保持一致的，多轮一致性做得很好！（第二张图我打算拿来做头像了哈哈）
 
-![](https://pic.yupi.icu/1/portrait-style-comparison%E5%A4%A7.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/portrait-style-comparison-1d3ab7910e)
 
 另外我还测了个搞笑版本。同一条狗的照片，每一轮都让 AI 把主体的头发再减少一点：
 
-![](https://pic.yupi.icu/1/image-20260909123206257.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909123206257-b1f9080682)
 
 几轮下来，除了发量在肉眼可见地减少之外，人物的五官、表情和动作始终保持一致，说明 Images 2.5 的多轮一致性能力确实靠谱。
 
-![](https://pic.yupi.icu/1/145793f5-664a-4b2f-ba3a-c48de26743c6.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/145793f5-664a-4b2f-ba3a-c48de26743c6-ef869c7a8f)
 
 TNND，仿佛看到了自己从前和以后的样子……
 
@@ -272,13 +276,13 @@ TNND，仿佛看到了自己从前和以后的样子……
 
 注意，我甚至不需要在提示词中告诉 AI「要和原图保持一致」：
 
-![](https://pic.yupi.icu/1/image-20260909125331709.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909125331709-f1422eec28)
 
 这个测试的关键是看城堡的造型、尖塔的位置、前方广场的布局这些元素，在四轮编辑中是不是始终保持一致。
 
 来，感受一下 GPT Images 2.5 可怕的局部编辑能力和一致性！
 
-![](https://pic.yupi.icu/1/image-20260909125953963.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909125953963-f8086ebd2b)
 
 
 
@@ -307,17 +311,17 @@ DeepSeek 的鲸鱼娘形象大家应该都很熟悉了，蓝色渐变长发、�
 ⑨竖大拇指，配文字「大肥鱼认证 👍」
 ```
 
-![](https://pic.yupi.icu/1/image-20260909130230126.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909130230126-d5be363750)
 
 虽然过程有点曲折，但最终 GPT Images 2.5 一口气生成了 9 张高清无背景的大图！
 
-![](https://pic.yupi.icu/1/image-20260909133758371.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909133758371-5c9439c2ef)
 
 每张鲸鱼娘的风格都是一致的，背景也是干净透明的，以后做品牌 IP 的周边素材就方便多了，不用再手动抠图了。
 
 好了，我现在可以到黄色大咸鱼上开个店了，有没有人需要代做表情包的？
 
-![](https://pic.yupi.icu/1/%E5%A4%A7%E8%82%A5%E9%B1%BC%E8%AE%A4%E8%AF%81%E8%A1%A8%E6%83%85%E5%B0%8F.jpeg)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/img-87b7ec5f7d)
 
 
 
@@ -327,11 +331,11 @@ Prompt 共享是一个偏社交属性的功能。当你生成了一张满意的�
 
 别人看到你的图片后，可以直接用同一个提示词模板，上传自己的照片和细节，生成属于自己的版本。
 
-![](https://pic.yupi.icu/1/image-20260909130902247.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909130902247-2b63c8a102)
 
 在 ChatGPT 的图片页面可以浏览当前热门的共享 Prompt 和 Templates 模板，看看大家都在玩什么花样。
 
-![](https://pic.yupi.icu/1/image-20260909113232974.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909113232974-6d61490653)
 
 
 
@@ -343,11 +347,11 @@ GPT 官方提到，目前有一个 80 年代复古照的共享 Prompt 正在全�
 
 点击「80s flashback」这个热门 Prompt，上传一张自己的照片，提交任务就好：
 
-![](https://pic.yupi.icu/1/image-20260909131246877.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909131246877-fd67587125)
 
 看看效果，真不戳，鱼皮成功穿越了！
 
-![](https://pic.yupi.icu/1/image-20260909131453657.png)
+![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260909131453657-30d127cca8)
 
 以后热门的创意 Prompt 可以像表情包一样在社交平台上传播，每个人都能用同一个模板生成自己的版本，还挺有意思的。
 
