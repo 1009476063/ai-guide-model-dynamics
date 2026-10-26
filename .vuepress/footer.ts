@@ -2,14 +2,14 @@
  * Site footer.
  *
  * Upstream listed its own companion sites and an ICP filing number that does not
- * belong to this deployment. Copyright now carries the content licence instead,
- * which is the one attribution obligation that must survive a fork (CC BY-NC-SA
- * requires crediting 程序员鱼皮 and keeping the same licence).
+ * belong to this deployment. The footer now carries just the content licence;
+ * the full author attribution that CC BY-NC-SA 4.0 requires lives in the repo
+ * README and LICENSE, so the reader-facing footer stays free of personal names.
  */
 export default {
   friendLinks: [],
   copyright: {
     href: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    name: "内容 CC BY-NC-SA 4.0 · 著作权 程序员鱼皮",
+    name: "内容 CC BY-NC-SA 4.0",
   },
 };
