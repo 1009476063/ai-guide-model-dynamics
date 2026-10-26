@@ -6,10 +6,6 @@ title: "GPT-6 Astra 发布解读"
 
 > OpenAI 号称全世界最智能的模型，主打像人一样操作电脑
 
-
-
-大家好，我是程序员鱼皮。
-
 时间过得真快啊，距离 GPT-5 发布竟然已经过去一年多了。
 
 2026 年 9 月 3 日，OpenAI 终于把 GPT-6 Astra 放出来了。
@@ -33,8 +29,6 @@ OpenAI 自己也知道这件事说不过去，于是负责 ChatGPT 的 Tibo 发�
 行行行，原谅你了（正好周五我可以摸鱼了~
 
 这篇文章我会带你看清 GPT-6 Astra 到底强在哪、官方展示了哪些案例，以及网上为什么会有截然不同的声音。如果你更关心它实际写代码的效果，可以直接阅读本板块中的《GPT-6 Astra 编程能力实测 - 4 个项目案例》。
-
-
 
 ## GPT-6 Astra 强在哪
 
@@ -76,8 +70,6 @@ GPT-6 Astra 的编程能力也有大幅提升。Terminal-Bench 4.0 考的是在�
 
 ![FrontierMath Tier 4 跑分](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-frontiermath-f6540c34-1b13d73595)
 
-
-
 ### 规格和价格
 
 最后说说大家关心的价格。API 里的模型 ID 是 `gpt-6-astra`，上下文窗口 105 万 token，最大输出 12.8 万 token，输入支持文本和图片。
@@ -89,8 +81,6 @@ GPT-6 Astra 的编程能力也有大幅提升。Terminal-Bench 4.0 考的是在�
 另外 Batch 和 Flex 是标准价的 50%，追求低延迟的 Fast 模式是标准价的 2 倍。Astra 也支持推理力度调节，从 `low`、`medium`、`high` 到 `xhigh`、`max` 一共五档，可以按任务难度平衡成本和效果。
 
 不过考虑到大多数用户都是在 Codex（ChatGPT）中使用套餐，再加上官方老是赠送重置额度，实际开销没有那么大。
-
-
 
 ## 官方展示的实战案例
 
@@ -138,8 +128,6 @@ Matt Shumer 让 Astra 在 Unreal Engine 里造一个世界，往里面填满由 
 
 ![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/image-20260904111253107-bc47ea588a)
 
-
-
 ## 从官方提示词里能学到什么
 
 看完案例你可能会想：官方是拿什么样的提示词做出这些东西的？
@@ -162,46 +150,4 @@ Run build and lint, then play several runs in the browser to verify collisions, 
 
 ![Glass Towers 玻璃塔游戏](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-glasstowers-04ea8b94-a35fde5347)
 
-这就是我一直在讲的 Loop Engineering，让 AI 写完自己验，验证不通过就自己修复。官方把它写成了提示词里的硬要求。想系统学这套方法，可以阅读本教程经验技巧板块中的《Loop Engineering 保姆级教程》。
-
-第二个启发是 **先画图再写代码**。
-
-小镇模拟游戏的提示词最后一段，是让模型先用文生图工具画几张玩法概念图，把视觉方向定下来，再开始写代码。
-
-![MiniTown 小镇模拟游戏](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-minitown-27923b7e-9621b57075)
-
-如果你平时让 AI 做前端总觉得出来的东西土，这一招直接助你羽化登仙。
-
-剩下的案例我就不逐个讲了，放一张成品感受一下水平。
-
-![Terrain Mixer 程序化地形生成器](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-terrainmixer-4100a914-d65ee08ed9)
-
-
-
-## AGI 时代真的来了么
-
-虽然官方把 GPT-6 Astra 吹得狂拽炫酷吊炸天，我看了官方展示的案例也觉得很牛呗，但是网上有很多不同的声音。
-
-第三方评测机构 Artificial Analysis 在发布当天就出了独立评测，结论跟官方不太一样。在他们的综合智能指数里，Astra 是 61 分，跟上一代 GPT-5.6 Sol 一模一样，比 Claude Fable 5.1 还低了 5 分。
-
-![Artificial Analysis 的独立评测](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt6astra-artificialanalysis-56a12dd4-e2e3ae205c)
-
-图里右边那一栏是单个任务的成本，Astra 1.67 美元，GPT-5.6 Sol 0.94 美元。**智能指数一分没涨，成本快翻倍了！**
-
-所以「全球最强」这个说法，在 OpenAI 自己挑的那批测试上成立，一换成第三方的综合指数就未必成立了。
-
-这件事其实给了我们一个很实用的判断方法：**看到新模型发布，先分清哪些跑分是厂商自己挑的、哪些是第三方跑的**。厂商挑的那批一定是自己占优的项目，第三方的综合指数才更接近日常使用的体感。
-
-而且根据历史情况，我们可以大胆假设，GPT-6 Astra 大概会像其他模型一样，第一周用起来像是在跟神说话，一周后厂商为了省算力搞一波降级，再用起来就像是在跟三岁小孩说话，两周后被用户投诉多了，就再把智力调回来一点，几周之后再发布 GPT-6.1，然后循环……
-
-![](https://pub-5477160dc12c41ee929d51a2e2fa91a1.r2.dev/guide/gpt-3ba3d8c8ed)
-
-
-
-## 写在最后
-
-抛开「AGI 时代」这种宏大的说法，我觉得 GPT-6 Astra 这次真正值得关注的是方向的变化：以前模型比的是谁写代码写得好，现在开始比谁能自己坐在电脑前把活儿干完。
-
-对我们普通开发者来说，这意味着 AI 能接手的工作范围又扩大了一圈，不只是写代码，还包括那些没有 API、只能手动点的软件操作。
-
-当然，跑分再漂亮也不等于你的场景里就好用。想知道 Astra 实际做项目的效果，接着阅读本板块中的《GPT-6 Astra 编程能力实测 - 4 个项目案例》就好；如果你想系统了解怎么根据预算和场景选模型，可以阅读本教程编程工具板块中的《AI 模型选择指南》。
+这就是我一直在讲的 Loop Engineering，让 AI 写完自己验，验证不通过就自己修复。官方把它写成了提示词里的硬要求。想系统学这套方法，
