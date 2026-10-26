@@ -95,11 +95,21 @@ await writeFile(
     ';\n',
 );
 
+/*
+ * The consumer (大模型世界's 查看评测文章 button) renders one link per model and
+ * has exactly one place to explain itself: the title attribute. So each entry
+ * carries the article title, not just the URL, and the collection carries its
+ * own title for the fallback link. `file` is kept so a mislinked model can be
+ * traced back to the source markdown without opening this generator.
+ */
+const collection = { url: base + articles.collection, title: '模型动态 · 全部实测文章' };
 const map = {
   generatedFrom: 'ai-guide 15 模型动态 (migrated snapshot)',
   baseUrl: base,
-  collection: base + articles.collection,
-  models: Object.fromEntries([...claims.entries()].map(([slug, a]) => [slug, base + a.path])),
+  collection,
+  models: Object.fromEntries(
+    [...claims.entries()].map(([slug, a]) => [slug, { url: base + a.path, title: a.title, file: a.file }]),
+  ),
 };
 await writeFile('guide-model-map.json', JSON.stringify(map, null, 2) + '\n');
 
