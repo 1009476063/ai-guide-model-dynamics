@@ -7,7 +7,7 @@ set -eu
 cd "$(dirname "$0")/.."
 export NODE_OPTIONS=--openssl-legacy-provider
 # canonical / sitemap / feed take their host from here (see .vuepress/config.ts)
-export GUIDE_BASE_URL="${GUIDE_BASE_URL:-https://ai-guide-418.pages.dev}"
+export GUIDE_BASE_URL="${GUIDE_BASE_URL:-https://docs.models.1661688.xyz}"
 npm run docs:build 2>&1 | tee /tmp/guide-build.log | grep -Ei 'No matching page|generated static|error' | sort | uniq -c
 test -s .vuepress/dist/index.html
 echo "dist pages: $(find .vuepress/dist -name index.html | wc -l | tr -d ' ')"
